@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export default function SimpleBackgroundPage() {
   return (
-    <div className="fixed relative h-[480px] w-screen">
+    <div className="fixed relative h-[480px] w-">
       {/* Background Image */}
       <Image
         src="/images/buildings.webp" 

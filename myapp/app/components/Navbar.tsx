@@ -122,28 +122,31 @@ const Navbar = () => {
           >
             <Link 
               href="/Services" 
-              className="flex items-center hover:text-orange-600 cursor-pointer"
+              className="flex items-center hover:text-orange-600 cursor-pointer group"
             >
-              Services <ChevronDown size={16} className="ml-1 transition-transform duration-200" />
+              Services <ChevronDown size={16} className="ml-1 transition-transform group-hover:rotate-[180deg] duration-500" />
             </Link>
 
             {/* Dropdown Content */}
-            {isServicesDropdownOpen && (
-              <div 
-                className="absolute top-full left-0 mt-0 w-[400px] bg-white shadow-xl rounded-md overflow-hidden z-50 border border-gray-100"
-              >
+           <div 
+              // ✨ CORRECTION: Conditional classes for smooth transition
+              className={`absolute top-full left-0 mt-0 w-[400px] bg-white shadow-xl rounded-md overflow-hidden z-50 border border-gray-100 
+                transition-all duration-300 ease-in-out transform origin-top
+                ${isServicesDropdownOpen ? 'opacity-100 scale-y-100 visible' : 'opacity-0 scale-y-0 invisible'}
+              `}
+            >
                 {serviceLinks.map((service) => (
                     <Link
                         key={service.name}
                         href={service.href}
-                        className="block px-4 py-3 text-gray-700 hover:bg-gray-100 hover:text-[#cf081f] transition"
+                        className="block px-4 py-3 text-gray-700 hover:bg-gray-100 hover:text-[#cf081f] transition-transform duration-500"
                         onClick={handleMouseLeave}
                     >
                         {service.name}
                     </Link>
                 ))}
               </div>
-            )}
+
           </li>
           {/* --- END DROPDOWN SECTION --- */}
 

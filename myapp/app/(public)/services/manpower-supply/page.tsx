@@ -1,7 +1,7 @@
 "use client";
 
 import Link from 'next/link';
-import {  ArrowRight, Hammer } from 'lucide-react';
+import {  ArrowRight, Hammer, Users } from 'lucide-react';
 import ParallaxPage from '../../../components/Parallex';
 
 import 'swiper/css';
@@ -27,7 +27,7 @@ const AirFreightPage = () => {
                 />
 
                 <div className="relative z-10 container mx-auto px-4 md:px-10 text-center">
-                    <Hammer size={64} className="mx-auto text-[#cf081f] mb-4" />
+                    <Users size={64} className="mx-auto text-[#cf081f] mb-4" />
                     <h1 className="text-5xl md:text-[43px] font-extrabold text-white mb-4">
                         Manpower Supply
                     </h1>

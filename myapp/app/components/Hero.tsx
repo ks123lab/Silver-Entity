@@ -12,7 +12,7 @@ const slides = [
     title: "Elevate Your Home With Our Doors & Windows!",
     description: "Whether you're in need of a brand-new garage door or looking to upgrade your current one, we have the perfect solution tailored just for you.",
     bgImage: "url('/images/buildings.webp')",
-    linkText: "Explore Products",
+    linkText: "Contact us",
     linkHref: "/products",
     linkTextSecondary: "Contact Us",
     linkHrefSecondary: "/contact",
@@ -64,10 +64,10 @@ export default function HeroSlider() {
       <div className="absolute inset-0 bg-black/60"></div>
 
       {/* Content Container */}
-      <div className="relative z-10 h-full flex items-end">
+      <div className="relative z-10 h-full flex ">
         
         {/* Inner Content Wrapper */}
-        <div className="container mx-auto px-6 md:px-12 pb-16 text-left max-w-6xl"> 
+        <div className="container   px-6 md:px-12 pb-16 text-left"> 
           
           <AnimatePresence initial={false} mode="wait">
             <motion.div
@@ -81,9 +81,15 @@ export default function HeroSlider() {
                 {currentSlide.title}
               </h1>
 
-              <p className="max-w-2xl text-lg md:text-xl mb-8 text-gray-200">
-                {currentSlide.description}
-              </p>
+        
+        
+
+
+
+
+
+
+        
 
             </motion.div>
           </AnimatePresence>
@@ -97,32 +103,13 @@ export default function HeroSlider() {
               {currentSlide.linkText}
             </Link>
 
-            {/* Secondary Button for Contact Us */}
-            {currentSlide.linkTextSecondary && (
-              <Link
-                href={currentSlide.linkHrefSecondary}
-                className="inline-block border-2 border-white hover:border-[#a3b18a] text-white hover:text-[#a3b18a] hover:bg-white font-semibold px-10 py-4 rounded-full shadow-lg transition transform hover:scale-[1.03] duration-300"
-              >
-                {currentSlide.linkTextSecondary}
-              </Link>
-            )}
+
+         
           </div>
         </div>
       </div>
       
-      {/* Navigation Dots */}
-      <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2 flex space-x-3 z-20">
-        {slides.map((_, index) => (
-          <button
-            key={index}
-            onClick={() => setCurrentIndex(index)}
-            className={`w-3 h-3 rounded-full transition-all duration-300 ${
-              index === currentIndex ? "bg-[#a3b18a] w-6" : "bg-gray-400 hover:bg-gray-100"
-            }`}
-            aria-label={`Go to slide ${index + 1}`}
-          />
-        ))}
-      </div>
+    
     </section>
   );
 }
