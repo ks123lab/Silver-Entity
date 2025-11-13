@@ -82,7 +82,9 @@ export default function HeroSlider() {
               </h1>
 
         
-        
+         <h1 className="text-4xl md:text-[16px] font-manrope font-light mb-4 leading-snug text-white max-w-xl">
+                {currentSlide.description}
+              </h1>
 
 
 
