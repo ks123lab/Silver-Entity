@@ -31,9 +31,9 @@ export async function POST(req) {
     // Email content
     const mailOptions = {
       // It's best practice for the 'from' address to match the authenticated user
-      from: `"Silver Entity Contact" <${process.env.SMTP_USER}>`, 
+      from: `"Silver Entity Engineering Solutions" <${process.env.SMTP_USER}>`, 
       to: process.env.SMTP_USER, // Sending to your own email address
-      subject: `New Message from ${name} (via Website Form)`,
+      subject: `New Message from ${name}`,
       text: `
         You have a new message from your contact form:
 

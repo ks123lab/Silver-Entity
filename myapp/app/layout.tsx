@@ -10,7 +10,7 @@ export const metadata = {
   
   // ✨ FAVICON ADDITION: Define the icon here
   icons: {
-    icon: '/vercel.svg', // Change the path and filename if different
+    icon: '/logo.svg', // Change the path and filename if different
   },
 };
 

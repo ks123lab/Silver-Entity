@@ -1,7 +1,7 @@
 "use client";
 
 import Link from 'next/link';
-import {  ArrowRight, BaggageClaim, Building, Hammer } from 'lucide-react';
+import {  ArrowRight, BaggageClaim, Building, Hammer, X } from 'lucide-react';
 import ParallaxPage from '../../../components/Parallex';
 
 import 'swiper/css';
@@ -11,8 +11,28 @@ import 'swiper/css/pagination';
 // Import modules you want to use (e.g., Navigation and Autoplay)
 import { Navigation, Autoplay } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { useState } from 'react';
 
+
+
+const images = [
+    { id: 1, src: "/images/buildings.webp", alt: "Electrical Work Image 1" },
+    { id: 2, src: "/images/buildings.webp", alt: "Electrical Work Image 2" },
+    { id: 3, src: "/images/buildings.webp", alt: "Electrical Work Image 3" },
+    { id: 4, src: "/images/buildings.webp", alt: "Electrical Work Image 4" },
+    { id: 5, src: "/images/buildings.webp", alt: "Electrical Work Image 5" },
+];
 const AirFreightPage = () => {
+
+      const [selectedImage, setSelectedImage] = useState<string | null>(null);
+
+    const openModal = (src: string) => {
+        setSelectedImage(src);
+    };
+
+    const closeModal = () => {
+        setSelectedImage(null);
+    };
     return (
         <div className="min-h-screen bg-gray-50 ">
             
@@ -85,58 +105,75 @@ Your trust drives our trade — ensuring reliability, transparency, and long-ter
         </div>
 
         {/* Swiper Slider Container */}
-        <div className="container mx-auto px-4">
-            <Swiper
-                // Configuration Props
-                modules={[Navigation, Autoplay]} // Enable modules like navigation and autoplay
-                spaceBetween={16} // Space between slides in pixels
-                slidesPerView={'auto'} // 'auto' makes it easy to show partial slides
-                centeredSlides={true} // Centers the active slide
-                loop={true} // Enables infinite loop
+         <div className="container mx-auto px-4">
+                    <Swiper
+                        modules={[Navigation, Autoplay]}
+                        spaceBetween={16}
+                        slidesPerView={'auto'}
+                        centeredSlides={true}
+                        loop={true}
+                        autoplay={{
+                            delay: 2500,
+                            disableOnInteraction: false,
+                        }}
+                        breakpoints={{
+                            640: {
+                                slidesPerView: 1,
+                            },
+                            1024: {
+                                slidesPerView: 3,
+                            },
+                        }}
+                        className="mySwiper"
+                    >
+                        {images.map((image) => (
+                            <SwiperSlide key={image.id}>
+                                <div 
+                                    onClick={() => openModal(image.src)}
+                                    className="cursor-pointer relative group"
+                                >
+                                    <img 
+                                        src={image.src} 
+                                        alt={image.alt} 
+                                        className="w-full h-auto object-cover rounded-lg shadow-md transition-opacity duration-300 group-hover:opacity-80" 
+                                    />
+                                    <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300 bg-black/20 rounded-lg">
+                                        <svg xmlns="http://www.w3.org/2000/svg" className="h-10 w-10 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 21h7a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </SwiperSlide>
+                        ))}
+                    </Swiper>
+                </div>
 
-                autoplay={{
-                    delay: 2500,
-                    disableOnInteraction: false,
-                }}
-                breakpoints={{
-                    // Show 1 slide per view on mobile
-                    640: {
-                        slidesPerView: 1,
-                    },
-                    // Show 3 slides per view on larger screens
-                    1024: {
-                        slidesPerView: 3,
-                    },
-                }}
-                className="mySwiper" // Custom class for potential custom styles
-            >
-                {/* 4 Original Images */}
-                <SwiperSlide>
-                    <img src="/images/buildings.webp" alt="Truck 1" className="w-full h-auto object-cover rounded-lg shadow-md" />
-                </SwiperSlide>
-                <SwiperSlide>
-                    <img src="/images/buildings.webp" alt="Truck 2" className="w-full h-auto object-cover rounded-lg shadow-md" />
-                </SwiperSlide>
-                <SwiperSlide>
-                    <img src="/images/buildings.webp" alt="Truck 3" className="w-full h-auto object-cover rounded-lg shadow-md" />
-                </SwiperSlide>
-                <SwiperSlide>
-                    <img src="/images/buildings.webp" alt="Truck 4" className="w-full h-auto object-cover rounded-lg shadow-md" />
-                </SwiperSlide>
-                     <SwiperSlide>
-                    <img src="/images/buildings.webp" alt="Truck 4" className="w-full h-auto object-cover rounded-lg shadow-md" />
-                </SwiperSlide>
-                     <SwiperSlide>
-                    <img src="/images/buildings.webp" alt="Truck 4" className="w-full h-auto object-cover rounded-lg shadow-md" />
-                </SwiperSlide>
-                     <SwiperSlide>
-                    <img src="/images/buildings.webp" alt="Truck 4" className="w-full h-auto object-cover rounded-lg shadow-md" />
-                </SwiperSlide>
-                
-                {/* Swiper automatically handles duplication for the 'loop' feature, 
-                    so you don't need the duplicate images manually anymore. */}
-            </Swiper>
-        </div>
+                  {/* Lightbox Modal */}
+                {selectedImage && (
+                    <div 
+                        className="fixed inset-0 z-[9999] bg-black/90 flex items-center justify-center p-4 transition-opacity duration-300"
+                        onClick={closeModal} 
+                    >
+                        <div className="relative  max-h-[90vh]" onClick={(e) => e.stopPropagation()}>
+                            {/* Close Button */}
+                            <button 
+                                onClick={closeModal} 
+                                className="absolute top-0 right-0 text-white z-10 p-2  bg-[#cf081f] hover:bg-red-700 transition"
+                                aria-label="Close image viewer"
+                            >
+                                <X size={24} />
+                            </button>
+                            
+                            {/* Full-size Image */}
+                            <img 
+                                src={selectedImage} 
+                                alt="Full-screen view" 
+                                className="block w-auto h-auto max-h-[90vh] max-w-[90vw] object-contain rounded-lg shadow-2xl"
+                            />
+                        </div>
+                    </div>
+                )}
+      
     </section>
 <ParallaxPage/>
 
