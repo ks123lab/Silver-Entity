@@ -74,11 +74,11 @@ const AirFreightPage = () => {
   Trusted, Efficient, <span className="text-[#cf081f]">and Reliable </span>Industrial Support Services
 </h2>
 
-            <p className="text-[16px] text-gray-700 mb-6 leading-relaxed">
+            <p className="text-[16px] text-gray-900 mb-6 leading-relaxed">
 When productivity, precision, and reliability matter, our Industrial Support Services provide comprehensive assistance for smooth and efficient operations. From manpower supply and equipment handling to logistics and maintenance, we ensure every process runs safely and effectively.  
 </p>
 
-<p className="text-[16px] text-gray-700 leading-relaxed">
+<p className="text-[16px] text-gray-900 leading-relaxed">
 We focus on delivering end-to-end industrial support tailored to your project needs. With skilled professionals, strict safety practices, and a commitment to operational excellence, we help industries maintain consistency and achieve higher performance.  
 Your success is our priority — ensuring reliability, safety, and sustainable support for every operation.
 </p>
@@ -158,7 +158,7 @@ Your success is our priority — ensuring reliability, safety, and sustainable s
                             {/* Close Button */}
                             <button 
                                 onClick={closeModal} 
-                                className="absolute top-0 right-0 text-white z-10 p-2  bg-[#ab6400] hover:bg-red-700 transition"
+                                className="absolute top-0 right-0 text-white z-10 p-2  bg-[#ed6a1f] hover:bg-red-700 transition"
                                 aria-label="Close image viewer"
                             >
                                 <X size={24} />

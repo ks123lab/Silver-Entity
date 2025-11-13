@@ -74,11 +74,11 @@ const AirFreightPage = () => {
                             <h2 className="text-4xl md:text-[43px] font-extrabold text-gray-800 mb-6 leading-tight">
                               Reliable Equipment<span className="text-[#cf081f]"> Rentals for </span>Every Project
                             </h2>
-                           <p className="text-[16px] text-gray-700 mb-6 leading-relaxed">
+                           <p className="text-[16px] text-gray-900 mb-6 leading-relaxed">
 When efficiency and reliability matter, our Equipment Rental services provide the right tools and machinery to keep your projects on schedule. From heavy construction equipment to specialized industrial tools, we deliver well-maintained, high-performance machines that meet the toughest site demands.
 </p>
 
-<p className="text-[16px] text-gray-700 leading-relaxed">
+<p className="text-[16px] text-gray-900 leading-relaxed">
 We understand the importance of having dependable equipment ready when you need it. Our rental solutions are designed to offer flexibility, affordability, and safety — ensuring your operations run smoothly with minimal downtime. Whether for short-term or long-term needs, trust us to supply quality equipment that supports your success.
 </p>
 
@@ -153,7 +153,7 @@ We understand the importance of having dependable equipment ready when you need 
                             {/* Close Button */}
                             <button 
                                 onClick={closeModal} 
-                                className="absolute top-0 right-0 text-white z-10 p-2  bg-[#ab6400] hover:bg-red-700 transition"
+                                className="absolute top-0 right-0 text-white z-10 p-2  bg-[#ed6a1f] hover:bg-red-700 transition"
                                 aria-label="Close image viewer"
                             >
                                 <X size={24} />

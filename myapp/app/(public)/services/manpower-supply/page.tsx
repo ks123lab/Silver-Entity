@@ -77,11 +77,11 @@ const AirFreightPage = () => {
 </h2>
 
 
-         <p className="text-[16px] text-gray-700 mb-6 leading-relaxed">
+         <p className="text-[16px] text-gray-900 mb-6 leading-relaxed">
 When productivity, skill, and reliability matter, our Manpower Supply services deliver highly trained and dependable professionals for diverse industrial, commercial, and construction projects. From technical experts to general laborers, we ensure that every workforce solution is tailored to meet your specific operational needs.
 </p>
 
-<p className="text-[16px] text-gray-700 leading-relaxed">
+<p className="text-[16px] text-gray-900 leading-relaxed">
 We specialize in providing qualified manpower across various sectors, ensuring timely deployment, compliance with safety standards, and consistent performance. With a strong commitment to excellence and efficiency, we help organizations build stronger teams that drive success and sustain long-term growth.  
 Your workforce is our strength — ensuring reliability, dedication, and quality in every placement.
 </p>
@@ -161,7 +161,7 @@ Your workforce is our strength — ensuring reliability, dedication, and quality
                             {/* Close Button */}
                             <button 
                                 onClick={closeModal} 
-                                className="absolute top-0 right-0 text-white z-10 p-2  bg-[#ab6400] hover:bg-red-700 transition"
+                                className="absolute top-0 right-0 text-white z-10 p-2  bg-[#ed6a1f] hover:bg-red-700 transition"
                                 aria-label="Close image viewer"
                             >
                                 <X size={24} />

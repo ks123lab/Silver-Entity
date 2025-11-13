@@ -77,11 +77,11 @@ const AirFreightPage = () => {
 
 
 
-      <p className="text-[16px] text-gray-700 mb-6 leading-relaxed">
+      <p className="text-[16px] text-gray-900 mb-6 leading-relaxed">
 When sustainability and resource optimization matter, our Scrap Material Trading services provide trusted and eco-friendly solutions for collecting, processing, and supplying recyclable materials. We handle a wide range of ferrous and non-ferrous scrap, ensuring transparency and fair value in every deal.
 </p>
 
-<p className="text-[16px] text-gray-700 leading-relaxed">
+<p className="text-[16px] text-gray-900 leading-relaxed">
 Our team ensures efficient handling, segregation, and transportation of materials while maintaining compliance with environmental and safety standards. Whether for industrial partners or recycling facilities, we deliver reliable supply chains that support both profitability and environmental responsibility.  
 Turning waste into value — responsibly and efficiently.
 </p>
@@ -163,7 +163,7 @@ Turning waste into value — responsibly and efficiently.
                             {/* Close Button */}
                             <button 
                                 onClick={closeModal} 
-                                className="absolute top-0 right-0 text-white z-10 p-2  bg-[#ab6400] hover:bg-red-700 transition"
+                                className="absolute top-0 right-0 text-white z-10 p-2  bg-[#ed6a1f] hover:bg-red-700 transition"
                                 aria-label="Close image viewer"
                             >
                                 <X size={24} />

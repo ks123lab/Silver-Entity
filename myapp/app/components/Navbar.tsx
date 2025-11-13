@@ -37,7 +37,7 @@ const serviceLinks = [
 // --- TopBar Component ---
 const TopBar = () => {
   return (
-    <div className="bg-gray-800 text-white hidden md:block">
+    <div className="bg-[#5c5c5c] text-white hidden md:block">
       <div className="flex justify-between items-center px-4 md:px-10 py-2">
         
         {/* Contact Info (Left Side) */}
@@ -110,7 +110,7 @@ const Navbar = () => {
         </Link>
 
         {/* Desktop Menu Links */}
-        <ul className="hidden lg:flex space-x-8 text-gray-800 font-medium">
+        <ul className="hidden lg:flex space-x-8 text-gray-800 font-semibold">
           <li><Link href="/" className="hover:text-orange-600">Home</Link></li>
           <li><Link href="/aboutus" className="hover:text-orange-600">About</Link></li>
           
@@ -139,7 +139,7 @@ const Navbar = () => {
                     <Link
                         key={service.name}
                         href={service.href}
-                        className="block px-4 py-3 text-gray-700 hover:bg-gray-100 hover:text-[#cf081f] transition-transform duration-500"
+                        className="block px-4 py-3 text-gray-900 hover:bg-gray-100 hover:text-[#cf081f] transition-transform duration-500"
                         onClick={handleMouseLeave}
                     >
                         {service.name}
@@ -156,20 +156,20 @@ const Navbar = () => {
         </ul>
 
 
-   <div className="flex gap-10">
-     <div className="hidden lg:flex items-center space-x-2 text-gray-700 hover:text-[#cf081f] transition">
-        <div className="bg-gray-300 p-2 flex items-center justify-center rounded-full">
-          <Phone size={18} className="text-[#cf081f]" />
-        </div>
-        <span className="font-semibold text-lg">
-          +91-6362514956
+   <div className="flex gap-4">
+     <div className="hidden lg:flex items-center  text-white  bg-black md:px-4   rounded-[8px] transition">
+        {/* <div className="bg-[#ed6a1f] p-2 flex items-center justify-center rounded-full">
+          <Phone size={18} className="text-white" />
+        </div> */}
+        <span className="font-semibold font-montserrat  text-[16px]">
+          +91 1234567890
         </span>
       </div>
        <Link
         href="/enquiry"
-        className="hidden lg:flex items-center bg-[#ab6400] text-white px-8 py-4 rounded-full hover:bg-orange-600 group transition"
+        className="hidden lg:flex items-center font-semibold bg-[#ed6a1f] text-white px-8 py-4 rounded-[8px] hover:bg-orange-600 group transition"
       >
-        Enquire Us <ArrowRight size={24} className="ml-2 group-hover:rotate-[-40deg] transition duration-300" />
+        Company Profile <ArrowRight size={24} className="ml-2 rotate-[-40deg] group-hover:rotate-[0deg] transition duration-300" />
       </Link>
    </div>
 
@@ -225,13 +225,13 @@ const Navbar = () => {
             <Link
               href="/enquiry"
               onClick={toggleMenu}
-              className="flex items-center bg-[#ab6400] text-white px-4 py-3 rounded-full justify-center hover:bg-orange-600 group transition"
+              className="flex items-center bg-[#ed6a1f] text-white px-4 py-3 rounded-full justify-center hover:bg-orange-600 group transition"
             >
-              Enquire Us <ArrowRight size={20} className="ml-2 group-hover:translate-x-1 transition duration-300" />
+              Company Profile <ArrowRight size={20} className="ml-2 group-hover:translate-x-1 transition duration-300" />
             </Link>
 
             {/* Mobile Phone Number */}
-            <div className="flex items-center space-x-2 text-gray-700">
+            <div className="flex items-center space-x-2 text-gray-900">
               <Phone size={18} className="text-[#cf081f]" />
               <span className="font-semibold text-base">
                 +91-6362514956

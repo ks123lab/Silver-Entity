@@ -45,15 +45,15 @@ export default function ProcessSectionHorizontalFlow() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         
         {/* Subtitle */}
-         <p className="text-[14px] font-semibold uppercase text-white mb-2 font-manrope">
+         <p className="text-[14px] font-semibold uppercase text-white mb-2 font-montserrat">
             — OUR PROCESS
           </p>
         
         {/* Main Title */}
-        <h2 className="text-4xl md:text-[43px] font-extrabold text-white mb-0 font-manrope " data-aos="fade-up" data-aos-delay="300"  data-aos-duration="1200">
+        <h2 className="text-4xl md:text-[43px] font-extrabold text-white mb-0 font-montserrat " data-aos="fade-up" data-aos-delay="300"  data-aos-duration="1200">
           Empowering You for <br className="hidden sm:inline" /> 
         </h2>
-          <h2 className="text-4xl md:text-[43px] font-light text-white mb-16 -mt-10 font-manrope " data-aos="fade-up" data-aos-delay="400"  data-aos-duration="1200">
+          <h2 className="text-4xl md:text-[43px] font-light text-white mb-16 -mt-10 font-montserrat " data-aos="fade-up" data-aos-delay="400"  data-aos-duration="1200">
            <br className="hidden sm:inline" /> Success with Our Services
         </h2>
 
@@ -81,12 +81,12 @@ export default function ProcessSectionHorizontalFlow() {
                 </div>
 
                 {/* Title */}
-                <h3 className="text-xl font-bold text-gray-100 mb-3 font-manrope"data-aos="fade-up" data-aos-delay="600"  data-aos-duration="1200">
+                <h3 className="text-xl font-bold text-gray-100 mb-3 font-montserrat"data-aos="fade-up" data-aos-delay="600"  data-aos-duration="1200">
                     {step.title}
                 </h3>
 
                 {/* Description */}
-                <p className="text-gray-200 leading-relaxed max-w-xs font-manrope text-base" data-aos="fade-up" data-aos-delay="800"  data-aos-duration="1200">
+                <p className="text-gray-200 leading-relaxed max-w-xs font-montserrat text-base" data-aos="fade-up" data-aos-delay="800"  data-aos-duration="1200">
                     {step.description}
                 </p>
                 </div>

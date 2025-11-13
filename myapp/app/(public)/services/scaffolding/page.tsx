@@ -76,11 +76,11 @@ const AirFreightPage = () => {
 </h2>
 
 
-        <p className="text-[16px] text-gray-700 mb-6 leading-relaxed">
+        <p className="text-[16px] text-gray-900 mb-6 leading-relaxed">
 When stability, safety, and efficiency are essential, our Scaffolding Services provide strong and reliable structures for every type of construction or maintenance project. We design and supply scaffolding systems that ensure safe access and working platforms for workers at any height.
 </p>
 
-<p className="text-[16px] text-gray-700 leading-relaxed">
+<p className="text-[16px] text-gray-900 leading-relaxed">
 With a focus on quality materials, precision installation, and compliance with international safety standards, our scaffolding team guarantees structural integrity and ease of use. Whether for short-term maintenance or large-scale construction, we deliver durable and efficient scaffolding that keeps your worksite safe and productive.  
 Safety and strength are the foundation of every structure we build.
 </p>
@@ -161,7 +161,7 @@ Safety and strength are the foundation of every structure we build.
                             {/* Close Button */}
                             <button 
                                 onClick={closeModal} 
-                                className="absolute top-0 right-0 text-white z-10 p-2  bg-[#ab6400] hover:bg-red-700 transition"
+                                className="absolute top-0 right-0 text-white z-10 p-2  bg-[#ed6a1f] hover:bg-red-700 transition"
                                 aria-label="Close image viewer"
                             >
                                 <X size={24} />

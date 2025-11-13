@@ -45,12 +45,12 @@ export default function ProcessSectionHorizontalFlow() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         
         {/* Subtitle */}
-        <p className="text-sm font-semibold uppercase text-[#a3b18a] mb-3 font-manrope">
+        <p className="text-sm font-semibold uppercase text-[#a3b18a] mb-3 font-montserrat">
           — OUR SIMPLE 4-STEP PROCESS —
         </p>
         
         {/* Main Title */}
-        <h2 className="text-4xl md:text-5xl font-extrabold text-white mb-16 font-manrope leading-snug">
+        <h2 className="text-4xl md:text-5xl font-extrabold text-white mb-16 font-montserrat leading-snug">
           Empowering You for <br className="hidden sm:inline" /> Success with Our Services
         </h2>
 
@@ -78,12 +78,12 @@ export default function ProcessSectionHorizontalFlow() {
                 </div>
 
                 {/* Title */}
-                <h3 className="text-xl font-bold text-gray-100 mb-3 font-manrope">
+                <h3 className="text-xl font-bold text-gray-100 mb-3 font-montserrat">
                     {step.title}
                 </h3>
 
                 {/* Description */}
-                <p className="text-gray-200 leading-relaxed max-w-xs font-manrope text-base">
+                <p className="text-gray-200 leading-relaxed max-w-xs font-montserrat text-base">
                     {step.description}
                 </p>
                 </div>

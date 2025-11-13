@@ -74,11 +74,11 @@ const AirFreightPage = () => {
                             <h2 className="text-4xl md:text-[43px] font-extrabold text-gray-800 mb-6 leading-tight">
                               Strong, Secure,<span className="text-[#cf081f]">and Reliable </span>Fencing Works
                             </h2>
-              <p className="text-[16px] text-gray-700 mb-6 leading-relaxed">
+              <p className="text-[16px] text-gray-900 mb-6 leading-relaxed">
 When security, safety, and boundary protection matter, our Fencing Works services deliver durable and dependable solutions for every project. From industrial sites to residential and commercial properties, we ensure precision and strength in every installation. Our commitment to quality craftsmanship ensures every fence we build enhances both protection and visual appeal.
 </p>
 
-<p className="text-[16px] text-gray-700 leading-relaxed">
+<p className="text-[16px] text-gray-900 leading-relaxed">
 We specialize in designing and installing a wide range of fencing systems, including chain-link, barbed wire, and custom-built enclosures. With skilled professionals and high-quality materials, we provide reliable, cost-effective, and long-lasting fencing solutions that stand strong in all environments.  
 Your protection is our priority — ensuring every fence we build offers both strength and peace of mind.
 </p>
@@ -156,7 +156,7 @@ Your protection is our priority — ensuring every fence we build offers both st
                             {/* Close Button */}
                             <button 
                                 onClick={closeModal} 
-                                className="absolute top-0 right-0 text-white z-10 p-2  bg-[#ab6400] hover:bg-red-700 transition"
+                                className="absolute top-0 right-0 text-white z-10 p-2  bg-[#ed6a1f] hover:bg-red-700 transition"
                                 aria-label="Close image viewer"
                             >
                                 <X size={24} />

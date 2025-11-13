@@ -9,7 +9,7 @@ import { useState, useEffect } from "react";
 const slides = [
   {
     id: 1,
-    title: "Elevate Your Home With Our Doors & Windows!",
+    title: "Engineering Solutions that Drive Progress.",
     description: "Whether you're in need of a brand-new garage door or looking to upgrade your current one, we have the perfect solution tailored just for you.",
     bgImage: "url('/images/buildings.webp')",
     linkText: "Contact us",
@@ -19,7 +19,7 @@ const slides = [
   },
   {
     id: 2,
-    title: "Seamless Installation. Lasting Quality.",
+    title: "Meticulous Planning. Enduring Performance.",
     description: "Our certified professionals ensure a perfect fit and long-term performance, giving you peace of mind with every installation.",
     bgImage: "url('/images/building1.webp')",
     linkText: "Get a Free Quote",
@@ -45,7 +45,7 @@ export default function HeroSlider() {
 
   return (
     // FINAL CORRECTION: Using h-[85vh] for better visual height and pt-[130px] for generous navbar offset.
-    <section className="relative h-[70vh] md:rounded-[50px] md:mx-4 pt-[200px] mt-40 overflow-hidden">
+    <section className="relative h-[70vh] md:rounded-[20px] md:mx-4 pt-[200px] mt-40 overflow-hidden">
       
       {/* Background Image Container */}
       <AnimatePresence initial={false}>
@@ -77,14 +77,11 @@ export default function HeroSlider() {
               exit={{ opacity: 0, y: -50 }}
               transition={{ duration: 0.8 }}
             >
-              <h1 className="text-4xl md:text-6xl font-manrope font-extrabold mb-4 leading-snug text-white max-w-4xl">
+              <h1 className="text-4xl md:text-[50px] font-montserrat font-semibold mt-20 leading-none text-white w-[650px]">
                 {currentSlide.title}
               </h1>
 
-        
-         <h1 className="text-4xl md:text-[16px] font-manrope font-light mb-4 leading-snug text-white max-w-xl">
-                {currentSlide.description}
-              </h1>
+ 
 
 
 
@@ -97,17 +94,7 @@ export default function HeroSlider() {
           </AnimatePresence>
           
           {/* Buttons Section (Using the green from the screenshot) */}
-          <div className="flex space-x-4 mt-2"> 
-            <Link
-              href={currentSlide.linkHref}
-              className="inline-block bg-[#a3b18a] hover:bg-[#8d9a74] text-white font-semibold px-10 py-4 rounded-full shadow-lg transition transform hover:scale-[1.03] duration-300"
-            >
-              {currentSlide.linkText}
-            </Link>
-
-
          
-          </div>
         </div>
       </div>
       

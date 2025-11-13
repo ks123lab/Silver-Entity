@@ -75,11 +75,11 @@ const AirFreightPage = () => {
                             <h2 className="text-4xl md:text-[43px] font-extrabold text-gray-800 mb-6 leading-tight">
                             Trusted, Efficient,<span className="text-[#cf081f]">and Reliable </span>General Trading Services
                             </h2>
-             <p className="text-[16px] text-gray-700 mb-6 leading-relaxed">
+             <p className="text-[16px] text-gray-900 mb-6 leading-relaxed">
 When reliability, quality, and global reach matter, our General Trading services deliver trusted sourcing and supply solutions for businesses across industries. From industrial equipment and construction materials to safety products and consumables, we ensure every transaction meets the highest standards of integrity and efficiency.  
 </p>
 
-<p className="text-[16px] text-gray-700 leading-relaxed">
+<p className="text-[16px] text-gray-900 leading-relaxed">
 We specialize in connecting clients with genuine, high-quality products from reputable suppliers worldwide. With a focus on timely delivery, competitive pricing, and customer satisfaction, we provide seamless trading solutions that help businesses operate smoothly and grow confidently.  
 Your trust drives our trade — ensuring reliability, transparency, and long-term partnership in every deal.
 </p>
@@ -158,7 +158,7 @@ Your trust drives our trade — ensuring reliability, transparency, and long-ter
                             {/* Close Button */}
                             <button 
                                 onClick={closeModal} 
-                                className="absolute top-0 right-0 text-white z-10 p-2  bg-[#ab6400] hover:bg-red-700 transition"
+                                className="absolute top-0 right-0 text-white z-10 p-2  bg-[#ed6a1f] hover:bg-red-700 transition"
                                 aria-label="Close image viewer"
                             >
                                 <X size={24} />

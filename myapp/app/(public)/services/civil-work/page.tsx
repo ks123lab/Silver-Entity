@@ -55,9 +55,9 @@ const AirFreightPage = () => {
                             <h2 className="text-4xl md:text-[43px] font-extrabold text-gray-800 mb-6 leading-tight">
                               Civil Work <span className="text-[#cf081f]">Solutions for</span> a Stronger Tomorrow.
                             </h2>
-                            <p className="text-[16px] text-gray-700 mb-6 leading-relaxed ">
+                            <p className="text-[16px] text-gray-900 mb-6 leading-relaxed ">
 When infrastructure quality is critical, our civil works services provide the expertise and reliability your project demands. From foundational excavation to complex structural construction, we leverage a skilled team and modern equipment to ensure your projects are completed safely, on time, and to the highest standards.    </p>
-                       <p className="text-[16px] text-gray-700 leading-relaxed">
+                       <p className="text-[16px] text-gray-900 leading-relaxed">
 We understand the complexities of industrial and commercial construction and are committed to delivering tailored solutions that optimize durability and compliance. Whether it's site preparation, specialized concrete work, or complete facility construction, trust us to provide efficient, cost-effective, and compliant civil works solutions every time.                            </p>
                          
                             <Link

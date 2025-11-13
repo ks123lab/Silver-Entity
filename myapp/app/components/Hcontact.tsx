@@ -93,11 +93,11 @@ export default function ContactSectionGeometric() {
                 
                 {/* Header */}
                 <div className="text-center mb-16">
-                    <p className="text-[14px] font-semibold uppercase text-gray-600 mb-2 font-manrope">
+                    <p className="text-[14px] font-semibold uppercase text-gray-600 mb-2 font-montserrat">
                         — REACH OUT 
                     </p>
-                    <h2 className="text-4xl md:text-5xl font-light font-manrope">
-                        Let's Discuss Your <span className='text-4xl md:text-5xl font-semibold font-manrope'>Project</span>
+                    <h2 className="text-4xl md:text-5xl font-light font-montserrat">
+                        Let's Discuss Your <span className='text-4xl md:text-5xl font-semibold font-montserrat'>Project</span>
                     </h2>
                 </div>
 
@@ -106,11 +106,11 @@ export default function ContactSectionGeometric() {
                     
                     {/* 1. Left Block: Contact Information (Dark Accent) */}
                     {/* Added shadow offset for depth */}
-                    <div className="bg-[#ab6400] p-8 md:p-12 rounded-xl shadow-2xl relative z-10 lg:w-[40%] lg:absolute lg:top-0 lg:left-0 lg:shadow-[-20px_20px_40px_rgba(0,0,0,0.3)]">
+                    <div className="bg-[#ed6a1f] p-8 md:p-12 rounded-xl shadow-2xl relative z-10 lg:w-[40%] lg:absolute lg:top-0 lg:left-0 lg:shadow-[-20px_20px_40px_rgba(0,0,0,0.3)]">
                         <h3 className="text-3xl font-bold font-serif text-white mb-8">
                             Ready to Start?
                         </h3>
-                        <p className="text-gray-100 font-manrope mb-8">
+                        <p className="text-gray-100 font-montserrat mb-8">
                             Use the form, or reach out directly—we're here to answer all your questions about installation and products.
                         </p>
 
@@ -138,7 +138,7 @@ export default function ContactSectionGeometric() {
                     {/* 2. Right Block: Form (White/Light Accent) */}
                     {/* Added offset and adjusted z-index for overlapping effect */}
                     <div className="bg-white p-8 md:p-12 rounded-xl shadow-2xl mt-12 lg:mt-0 lg:w-[68%] lg:absolute lg:top-12 lg:right-0 relative z-20 lg:shadow-[20px_20px_40px_rgba(0,0,0,0.1)]">
-                        <h3 className="text-2xl font-bold mb-8 font-manrope text-gray-900">
+                        <h3 className="text-2xl font-bold mb-8 font-montserrat text-gray-900">
                             Project Enquiry Form
                         </h3>
                         
@@ -203,7 +203,7 @@ export default function ContactSectionGeometric() {
                             {/* Submit Button */}
                             <button
                                 type="submit"
-                                className="flex items-center justify-center space-x-2 bg-[#ab6400] text-white font-bold py-3 px-8 rounded-lg hover:bg-[#a3b18a] transition duration-300 shadow-lg"
+                                className="flex items-center justify-center space-x-2 bg-[#ed6a1f] text-white font-bold py-3 px-8 rounded-lg hover:bg-[#a3b18a] transition duration-300 shadow-lg"
                             >
                                 <Send className="w-5 h-5" />
                                 <span>Submit Enquiry</span>

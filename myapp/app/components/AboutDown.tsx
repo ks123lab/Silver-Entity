@@ -49,20 +49,20 @@ export default function CategoryHighlightSection() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 mb-16 items-start">
           {/* Left: Heading */}
           <div className="text-center lg:text-left  border-r-1 ">
-            <p className="text-[14px] font-semibold uppercase text-gray-600 mb-2 font-manrope">
+            <p className="text-[14px] font-semibold uppercase text-gray-600 mb-2 font-montserrat">
               — ABOUT US
             </p>
-            <h2 className="text-4xl md:text-4xl  text-gray-900 font-manrope leading-tight">
+            <h2 className="text-4xl md:text-4xl  text-gray-900 font-montserrat leading-tight">
               Discover Premium Doors, 
             </h2>
-             <h2 className="text-4xl md:text-4xl font-bold text-gray-900 font-manrope leading-tight">
+             <h2 className="text-4xl md:text-4xl font-bold text-gray-900 font-montserrat leading-tight">
            Windows, and Millwork
             </h2>
           </div>
 
           {/* Right: Descriptive Paragraph */}
           <div className="text-center lg:text-left pt-2">
-            <p className="text-gray-700 leading-relaxed text-[16px] max-w-xl lg:ml-auto font-manrope">
+            <p className="text-gray-900 leading-relaxed text-[16px] max-w-xl lg:ml-auto font-montserrat">
               Explore our top-quality selection designed for every style and budget. Featuring
               leading brands like Therma-Tru, Jeld-Wen, and Marvin Windows, our products promise
               exceptional craftsmanship and lasting appeal.
@@ -100,17 +100,17 @@ export default function CategoryHighlightSection() {
 </div>
 
               {/* Title */}
-              <h3 className="text-2xl font-semibold text-gray-900 mb-2 font-manrope">
+              <h3 className="text-2xl font-semibold text-gray-900 mb-2 font-montserrat">
                 {category.title}
               </h3>
 
               {/* Description */}
-              <p className="text-gray-700 leading-relaxed mb-4 max-w-sm font-manrope">
+              <p className="text-gray-900 leading-relaxed mb-4 max-w-sm font-montserrat">
                 {category.description}
               </p>
 
               {/* View More Link */}
-              <Link href={category.linkHref} className="text-[#a3b18a] font-semibold text-sm uppercase hover:underline transition-colors duration-200 font-manrope">
+              <Link href={category.linkHref} className="text-[#a3b18a] font-semibold text-sm uppercase hover:underline transition-colors duration-200 font-montserrat">
                 VIEW MORE →
               </Link>
             </div>

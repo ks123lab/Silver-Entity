@@ -15,8 +15,9 @@ export default function Home() {
     <>
    
       <Hero/>
+            <Services/>
       <AboutPage/>
-      <Services/>
+
       <ProcessSection/>
       <AboutDown/>
       <ParallaxPage/>
