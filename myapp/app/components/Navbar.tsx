@@ -148,8 +148,8 @@ const Navbar = () => {
           {/* --- END DROPDOWN SECTION --- */}
 
           <li><Link href="/clients" className="hover:text-orange-600">Clients</Link></li>
-          <li><Link href="/Profile" className="hover:text-orange-600">Company Profile</Link></li>
-          <li><Link href="/Contact" className="hover:text-orange-600">Contact Us</Link></li>
+          <li><Link href="/profile" className="hover:text-orange-600">Company Profile</Link></li>
+          <li><Link href="/contact" className="hover:text-orange-600">Contact Us</Link></li>
         </ul>
 
 
