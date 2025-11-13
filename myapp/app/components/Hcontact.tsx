@@ -106,7 +106,7 @@ export default function ContactSectionGeometric() {
                     
                     {/* 1. Left Block: Contact Information (Dark Accent) */}
                     {/* Added shadow offset for depth */}
-                    <div className="bg-[#cf081f] p-8 md:p-12 rounded-xl shadow-2xl relative z-10 lg:w-[40%] lg:absolute lg:top-0 lg:left-0 lg:shadow-[-20px_20px_40px_rgba(0,0,0,0.3)]">
+                    <div className="bg-[#ab6400] p-8 md:p-12 rounded-xl shadow-2xl relative z-10 lg:w-[40%] lg:absolute lg:top-0 lg:left-0 lg:shadow-[-20px_20px_40px_rgba(0,0,0,0.3)]">
                         <h3 className="text-3xl font-bold font-serif text-white mb-8">
                             Ready to Start?
                         </h3>
@@ -203,7 +203,7 @@ export default function ContactSectionGeometric() {
                             {/* Submit Button */}
                             <button
                                 type="submit"
-                                className="flex items-center justify-center space-x-2 bg-[#cf081f] text-white font-bold py-3 px-8 rounded-lg hover:bg-[#a3b18a] transition duration-300 shadow-lg"
+                                className="flex items-center justify-center space-x-2 bg-[#ab6400] text-white font-bold py-3 px-8 rounded-lg hover:bg-[#a3b18a] transition duration-300 shadow-lg"
                             >
                                 <Send className="w-5 h-5" />
                                 <span>Submit Enquiry</span>

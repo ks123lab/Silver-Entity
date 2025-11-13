@@ -53,7 +53,7 @@ export default function AboutPage() {
                 
                 {/* Phone contact */}
                 <div className="flex items-center space-x-3">
-                    <div className="bg-[#cf081f] p-3 rounded-full flex items-center justify-center">
+                    <div className="bg-[#ab6400] p-3 rounded-full flex items-center justify-center">
                         {/* Icon remains the same */}
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
@@ -85,7 +85,7 @@ export default function AboutPage() {
      
           <div className="lg:col-span-5 relative h-[500px] w-full">
      
-            <div className="absolute top-10 right-0 w-[90%] h-full bg-[#cf081f] rounded-l-3xl z-0 hidden lg:block" data-aos="fade-in" data-aos-delay="2" data-aos-duration="2500"></div>
+            <div className="absolute top-10 right-0 w-[90%] h-full bg-[#ab6400] rounded-l-3xl z-0 hidden lg:block" data-aos="fade-in" data-aos-delay="2" data-aos-duration="2500"></div>
   
             <div className="absolute top-0 left-0 lg:left-[-50px] w-full h-[450px] rounded-2xl overflow-hidden shadow-2xl z-10">
               <Image

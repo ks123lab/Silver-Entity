@@ -167,7 +167,7 @@ const Navbar = () => {
       </div>
        <Link
         href="/enquiry"
-        className="hidden lg:flex items-center bg-[#cf081f] text-white px-8 py-4 rounded-full hover:bg-orange-600 group transition"
+        className="hidden lg:flex items-center bg-[#ab6400] text-white px-8 py-4 rounded-full hover:bg-orange-600 group transition"
       >
         Enquire Us <ArrowRight size={24} className="ml-2 group-hover:rotate-[-40deg] transition duration-300" />
       </Link>
@@ -225,7 +225,7 @@ const Navbar = () => {
             <Link
               href="/enquiry"
               onClick={toggleMenu}
-              className="flex items-center bg-[#cf081f] text-white px-4 py-3 rounded-full justify-center hover:bg-orange-600 group transition"
+              className="flex items-center bg-[#ab6400] text-white px-4 py-3 rounded-full justify-center hover:bg-orange-600 group transition"
             >
               Enquire Us <ArrowRight size={20} className="ml-2 group-hover:translate-x-1 transition duration-300" />
             </Link>

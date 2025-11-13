@@ -67,7 +67,7 @@ const AirFreightPage = () => {
                             <img 
                                 src="/images/buildings.webp"
                                 alt="Cargo plane being loaded with containers"
-                                className="w-full md:h-[520px] object-cover rounded-lg shadow-xl"
+                                className="w-full md:h-[468px] object-cover rounded-lg shadow-xl"
                             />
                         </div>
 
@@ -161,7 +161,7 @@ Your workforce is our strength — ensuring reliability, dedication, and quality
                             {/* Close Button */}
                             <button 
                                 onClick={closeModal} 
-                                className="absolute top-0 right-0 text-white z-10 p-2  bg-[#cf081f] hover:bg-red-700 transition"
+                                className="absolute top-0 right-0 text-white z-10 p-2  bg-[#ab6400] hover:bg-red-700 transition"
                                 aria-label="Close image viewer"
                             >
                                 <X size={24} />

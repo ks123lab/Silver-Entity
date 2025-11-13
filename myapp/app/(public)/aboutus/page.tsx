@@ -47,7 +47,7 @@ const AirFreightPage = () => {
                             <img 
                                 src="/images/buildings.webp"
                                 alt="Cargo plane being loaded with containers"
-                                className="w-full md:h-[520px] object-cover rounded-lg shadow-xl"
+                                className="w-full md:h-[468px] object-cover rounded-lg shadow-xl"
                             />
                         </div>
 

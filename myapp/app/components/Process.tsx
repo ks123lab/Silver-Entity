@@ -41,7 +41,7 @@ const processSteps: ProcessStep[] = [
 export default function ProcessSectionHorizontalFlow() {
   return (
     // Outer section wrapper with the deep olive background
-    <section className="py-24 bg-[#cf081f] text-gray-800">
+    <section className="py-24 bg-gray-800 text-gray-800">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         
         {/* Subtitle */}
