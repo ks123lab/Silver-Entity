@@ -21,7 +21,7 @@ const Process = () => {
 
       {/* Image Section - Hidden on mobile, shown on md+ */}
       <div className="w-full relative hidden  lg:block">
-        <div className="absolute flex gap-8 top-36 lg:top-10 md:ml-[400px] -translate-x-1/2 max-w-7xl w-[500px] h-[500px] px-4 sm:px-6 lg:px-8 z-10">
+        <div className="absolute flex gap-8 top-36 lg:top-10 md:ml-[400px] max-w-7xl md:-translate-x-1/2 max-w-7xl w-[90%] h-auto sm:w-[300px] lg:w-[500px] lg:h-[500px] px-4 sm:px-6 lg:px-8 z-10">
           <img
             className="md:rounded-tl-[50px] md:rounded-br-[50px]"
             src="/images/b2.jpg"
