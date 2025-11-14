@@ -47,11 +47,12 @@ const AirFreightPage = () => {
                             <img 
                                 src="/images/buildings.webp"
                                 alt="Cargo plane being loaded with containers"
-                                className="w-full md:h-[468px] object-cover rounded-lg shadow-xl"
+                                className="w-full md:h-[500px] object-cover rounded-lg shadow-xl"
                             />
                         </div>
 
                         <div className="order-1 md:order-2">
+                            <p className='text-lg font-semibold uppercase text-gray-800 mb-6 leading-tight'>About Silver Entity Engineering</p>
                             <h2 className="text-4xl md:text-[43px] font-extrabold text-gray-800 mb-6 leading-tight">
                               Civil Work <span className="text-[#cf081f]">Solutions for</span> a Stronger Tomorrow.
                             </h2>

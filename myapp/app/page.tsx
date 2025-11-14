@@ -2,11 +2,14 @@
 import Hero from "./components/Hero";
 import AboutPage from "./components/AboutPage"
 // import ScrollTriggerDemo from "./components/ScrollTriggerDemo";
-import ProcessSection from "./components/Process";
-import AboutDown from "./components/AboutDown";
+import ProcessSection from "./components/Quality";
+import AboutDown from "./components/WhyChooseUs";
 import ParallaxPage from "./components/Parallex";
 import Hcontact from "./components/Hcontact"
 import Services from "./components/Services"
+import Clients from "./components/Clients"
+import FourCards from "./components/FourCards"
+import Faq from "./components/Faq"
 
 export default function Home() {
 
@@ -21,7 +24,10 @@ export default function Home() {
       <ProcessSection/>
       <AboutDown/>
       <ParallaxPage/>
-      <Hcontact/>
+       <Clients/>
+        <FourCards/>
+        <Faq/>
+      {/* <Hcontact/> */}
 
     </>
     

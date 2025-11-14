@@ -1,101 +1,109 @@
-import { Mail, Phone, MapPin, Facebook, Instagram, Twitter, ArrowRight } from "lucide-react";
-import Link from "next/link";
+import React from 'react';
+import { Facebook, Twitter, Instagram, ArrowRight,Mail,Phone } from "lucide-react";
+
+// Orange color matching the image
+const primaryColor = "bg-[#ff6600]"; 
 
 export default function Footer() {
+
+  const navLinks = [
+    { title: "About Us", href: "/about" },
+    // { title: "Our Services", href: "/services" },
+    { title: "Company Profile", href: "/profile" },
+    { title: "Clients", href: "/clients" },
+    { title: "Contact", href: "/contact" },
+  ];
+
   return (
-    <footer className="font-sans">
-      
-      {/* 1. TOP CTA SECTION with Image Background */}
-      <div className="relative h-64 flex items-center justify-center bg-cover bg-center" 
-          style={{ backgroundImage: "url('/images/building1.webp')" }}> 
-        
-        {/* Overlay for readability */}
-        <div className="absolute inset-0 bg-gray-900/30"></div>
-        
-        <div className="relative z-10 text-white text-center">
-          <h2 className="text-3xl md:text-4xl font-extrabold mb-4">
-            Ready to Build Your Next Project?
-          </h2>
-          {/* Main CTA Button */}
-          <Link
-            href="/contact"
-            className="inline-flex items-center bg-yellow-400 text-gray-900 px-8 py-3 rounded-full font-bold shadow-lg hover:bg-yellow-500 transition duration-300"
-          >
-            Start an Enquiry 
-            <ArrowRight size={20} className="ml-2" />
-          </Link>
+    <footer className={`font-montserrat ${primaryColor} text-white rounded-t-[50px]  mx-4 h-[430px] shadow-lg`}>
+      <div className="max-w-[185vh] ml-40 px-6 sm:px-10 lg:px-14 pt-12  ">
+
+        {/* --- 1. TOP SECTION: Socials --- */}
+        <div className="flex justify-between mb-12 border-b border-white/20 pb-6">
+        <div className='w-20 h-20'>
+          <img src="/images/logo.png" alt="" className='filter invert' />
         </div>
-      </div>
+          <div className="flex gap-4">
+            <a href="#" aria-label="Facebook" className="w-10 h-10 rounded-full border border-white flex items-center justify-center hover:bg-white hover:text-orange-600 transition-colors duration-300">
+              <Facebook size={20} />
+            </a>
+            <a href="#" aria-label="Twitter" className="w-10 h-10 rounded-full border border-white flex items-center justify-center hover:bg-white hover:text-orange-600 transition-colors duration-300">
+              <Twitter size={20} />
+            </a>
+            <a href="#" aria-label="LinkedIn" className="w-10 h-10 rounded-full border border-white flex items-center justify-center hover:bg-white hover:text-orange-600 transition-colors duration-300">
+              <div className="text-sm font-bold">in</div>
+            </a>
+            <a href="#" aria-label="Pinterest" className="w-10 h-10 rounded-full border border-white flex items-center justify-center hover:bg-white hover:text-orange-600 transition-colors duration-300">
+              <div className="text-sm font-bold">P</div>
+            </a>
+          </div>
+        </div>
 
-      {/* 2. BOTTOM INFO GRID */}
-      <div className="bg-gray-900 text-gray-300 py-12 justify-center">
-        {/* Adjusted grid to 5 columns on large screens for space */}
-        <div className="max-w-[158vh] md:ml-[400px] mx-auto px-6 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-10"> 
-
-          {/* 1. Company & Socials (Col 1) */}
-          <div className="col-span-2 md:col-span-1 lg:col-span-1">
-            <img className="w-28 h-28 filter invert -mt-2" src="/images/logo.png" alt="" />
-            <p className="text-gray-400 text-sm mb-4">
-              Providing reliable industrial support and contracting services with excellence since 2024.
+        {/* --- 2. MIDDLE SECTION: Subscription + Addresses --- */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 pb-16">
+          
+          {/* Subscription Form */}
+          <div>
+            <p className="mb-4 text-white text-base">
+              Subscribe for the latest event updates
             </p>
-            <div className="flex gap-4">
-              <Link href="#" aria-label="Facebook" className="hover:text-yellow-400 transition"><Facebook size={20} /></Link>
-              <Link href="#" aria-label="Instagram" className="hover:text-yellow-400 transition"><Instagram size={20} /></Link>
-              <Link href="#" aria-label="Twitter" className="hover:text-yellow-400 transition"><Twitter size={20} /></Link>
+            <div className="flex">
+              <input
+                type="email"
+                placeholder="Type your Email address"
+                className="p-3 w-full bg-white text-gray-800 rounded-l-md focus:outline-none placeholder-gray-500"
+              />
+              <button className="p-3 w-[140px] px-0 flex items-center text-sm justify-center group bg-black text-gray-100 font-semibold rounded-r-md hover:bg-gray-900 transition-colors duration-300">
+                Sign up <ArrowRight size={18} className="ml-2 rotate-[-40deg] group-hover:rotate-[0deg] transition duration-500" />
+              </button>
             </div>
           </div>
 
-          {/* 2. Services List (New Col 2) */}
-          <div className="col-span-1">
-            <h3 className="text-[20px] font-semibold text-white mb-3">Our Services</h3>
-            <ul className="space-y-2 text-sm">
-              <li><Link href="/services/electrical-instrumentation" className="hover:text-yellow-400 transition">Electrical & Instrumentation Works</Link></li>
-              <li><Link href="/services/scaffolding" className="hover:text-yellow-400 transition">Scaffolding</Link></li>
-              <li><Link href="/services/equipment-rentals" className="hover:text-yellow-400 transition">Equipment Rentals</Link></li>
-              <li><Link href="/services/manpower-supply" className="hover:text-yellow-400 transition">Manpower Supply</Link></li>
-              <li><Link href="/services/industrial-support" className="hover:text-yellow-400 transition">Industrial Support</Link></li>
-              <li><Link href="/services/fencing-work" className="hover:text-yellow-400 transition">Fencing Work</Link></li>
-              <li><Link href="/services/civil-work" className="hover:text-yellow-400 transition">Civil Work</Link></li>
-              <li><Link href="/services/scrap-materials" className="hover:text-yellow-400 transition">Scrap Materials</Link></li>
-            </ul>
+          {/* New York Office */}
+          <div>
+            <h3 className="text-xl font-bold mb-3">Address</h3>
+            <address className="text-lg not-italic space-y-1  text-white/80">
+              <p>123 Madison Avenue, Suite 60D</p>
+              <p>Al-Hussain, SA 10016, Saudhi Arabia</p>
+            </address>
           </div>
 
-          {/* 3. Quick Links (Reorganized Col 3) */}
-          <div className="col-span-1">
-            <h3 className="text-[20px] font-semibold text-white mb-3">Quick Links</h3>
-            <ul className="space-y-2 text-sm">
-              <li><Link href="/about" className="hover:text-yellow-400 transition">About Us</Link></li>
-              <li><Link href="/clients" className="hover:text-yellow-400 transition">Clients</Link></li>
-              <li><Link href="/contact" className="hover:text-yellow-400 transition">Contact Us</Link></li>
-              <li><Link href="/profile" className="hover:text-yellow-400 transition">Company Profile</Link></li>
-            </ul>
+          {/* London Office */}
+          <div>
+            <h3 className="text-xl font-bold mb-3">Contact Us</h3>
+            <address className="text-sm flex gap-1 not-italic space-y-1 text-white/80">
+                <Mail size={18} className="text-white" /><p>info@silverentity.com</p>
+       
+            </address>
+             <address className="text-sm flex gap-1 not-italic space-y-1 text-white/80">
+                <Phone size={18} className="text-white" /><p>+91-6362514956</p>
+       
+            </address>
           </div>
-          
-          {/* 4. Contact Details (Col 4, took place of old Col 3) */}
-          <div className="lg:col-span-2 col-span-2 md:col-span-1">
-            <h3 className="text-[20px] font-semibold text-white mb-3">Reach Out</h3>
-            <ul className="space-y-3 text-sm">
-              <li className="flex items-start gap-2">
-                <MapPin size={18} className="mt-1 flex-shrink-0"/> 
-                <span>Mangalore, India</span>
-              </li>
-              <li className="flex items-center gap-2">
-                <Phone size={18} className="flex-shrink-0"/> 
-                <span>+91 63625 14956</span>
-              </li>
-              <li className="flex items-center gap-2">
-                <Mail size={18} className="flex-shrink-0"/> 
-                <span>mufizmalar@gmail.com</span>
-              </li>
-            </ul>
-          </div>
-          
         </div>
-      </div>
 
-      {/* Copyright */}
-      <div className="bg-gray-900 border-t border-gray-800 pt-6 pb-4 text-center text-xs text-gray-500">
-        © {new Date().getFullYear()} Silver Entity. All rights reserved. Designed by <a className="text-white" href="https://www.komquest.in">Komquest Solutions</a>
+        {/* --- 3. BOTTOM NAV LINKS --- */}
+     <div className="pt-6 border-t border-white/20 flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0 text-sm font-semibold px-4">
+    {/* Navigation Links Group */}
+    <div className="flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-8">
+        {navLinks.map((link, index) => (
+            <a 
+                key={index} 
+                href={link.href} 
+                className="group flex items-center hover:text-yellow-300 transition-colors duration-300"
+            >
+                {link.title}
+                <ArrowRight size={14} className="ml-1 opacity-0 group-hover:opacity-100 group-hover:translate-x-1 transition-all duration-300" />
+            </a>
+        ))}
+    </div>
+
+    {/* Copyright Text on the Right */}
+    <div className="text-sm font-light mt-4 md:mt-0">
+        &copy; {new Date().getFullYear()} Copyright © 2025 CargoTrade Solutions Est. Designed By <a className='font-extrabold' href="https://www.komquest.in">Komquest Solutions</a>
+    </div>
+</div>
+
       </div>
     </footer>
   );

@@ -61,7 +61,7 @@ export default function HeroSlider() {
       </AnimatePresence>
       
       {/* Overlay (Black with 60% opacity for text contrast) */}
-      <div className="absolute inset-0 bg-black/60"></div>
+      <div className="absolute inset-0 bg-black/20"></div>
 
       {/* Content Container */}
       <div className="relative z-10 h-full flex ">
