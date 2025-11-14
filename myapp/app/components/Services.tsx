@@ -154,7 +154,7 @@ export default function MaterialsServiceShowcase() {
 <div className='w-full bg-white text-black font-semibold   grid grid-cols-1 md:grid-cols-4 '>
   
   {/* Grid Item 1 */}
-  <div className="text-[18px] flex items-center justify-center p-4 border-r gap-5 border-gray-500 text-center">
+  <div className="text-[18px] flex items-center justify-center p-4 border-r  gap-5 border-gray-500 text-center">
     Company Profile <Download size={20} className="text-black " />
   </div>
   
@@ -164,12 +164,12 @@ export default function MaterialsServiceShowcase() {
   </div>
   
   {/* Grid Item 3 */}
- <div className="text-[18px] flex items-center justify-center p-4 border-r gap-5 border-gray-500 text-center">
+ <div className="text-[18px] flex items-center justify-center p-4  gap-5  text-center">
     Get In Touch <Phone size={20} fill='black' className="text-black rotate-270" />
   </div>
   
   {/* Grid Item 4 */}
-  <div className="text-[18px] p-4 border-r border-gray-500 text-center">
+  <div className="text-[18px] p-4 border-l border-gray-500 text-center">
     Quality Service
   </div>
   

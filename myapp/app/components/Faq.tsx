@@ -51,7 +51,7 @@ const FAQItem = ({ faq, isOpen, toggleFAQ }:FAQItemProps) => {
   return (
     <div className="border-b border-gray-200 py-6">
       <button 
-        className="flex justify-between items-start w-full text-left focus:outline-none"
+        className="flex justify-between items-start w-auto md:w-[800px] text-left focus:outline-none"
         onClick={toggleFAQ}
         aria-expanded={isOpen}
         aria-controls={`faq-answer-${faq.id}`}
@@ -89,8 +89,8 @@ export default function FAQSection() {
   };
 
   return (
-    <section className="py-20 bg-white font-sans">
-      <div className=" max-w-[176vh] ml-40 px-4 sm:px-6 lg:px-8">
+    <section className="py-20 bg-white font-montserrat md:-mt-20">
+      <div className=" max-w-[166vh] ml-40 px-4 sm:px-6 lg:px-8">
         
         {/* Two-Column Layout */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">

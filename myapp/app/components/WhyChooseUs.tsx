@@ -58,7 +58,7 @@ export default function VerticalCategoryList() {
 
   return (
     <section className="relative py-20 bg-white -mt-20 text-gray-800 ">
-      <div className="md:max-w-[185vh] md:ml-40  md:-mt-[80px] px-4 sm:px-6 lg:px-8">
+      <div className="md:max-w-[155vh] md:ml-46  md:-mt-[80px] px-4 sm:px-6 lg:px-8">
         
         {/* Header Section (Based on 'Driven to Deliver' style) */}
         <div className="mb-12 lg:mb-16">

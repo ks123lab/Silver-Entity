@@ -47,7 +47,7 @@ const FourCards = () => {
   return (
     <section className="min-h-[550px]  my-12 md:my-20 font-sans relative">
       <div className="px-4 sm:px-6 lg:px-0">
-        <div className="grid grid-cols-1 md:grid-cols-4 overflow-hidden shadow-2xl relative">
+        <div className="grid grid-cols-1 md:grid-cols-4 overflow-hidden  relative">
 
           {/* LEFT TEXT BLOCK */}
           <div className="md:col-span-3 bg-[#5c5c5c] py-24  p-8 sm:p-12 lg:p-16 flex flex-col">
@@ -122,7 +122,7 @@ const FourCards = () => {
             <img
               src={content.imageSrc}
               alt={content.imageAlt}
-              className="w-full h-[580px] object-cover"
+              className="w-full h-[575px] object-cover"
             />
           </div>
         </section>
