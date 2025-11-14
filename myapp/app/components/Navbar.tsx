@@ -125,10 +125,10 @@ const Navbar = () => {
       
       {/* 2. Main Navbar - FADE-DOWN ANIMATION */}
       <nav 
-        className={`flex justify-between items-center px-4 md:px-10 py-5 bg-white shadow-md 
+        className={`flex justify-between items-center px-4 md:px-12 py-5 bg-white shadow-md 
         transition-all duration-500 ease-in-out ${
           isScrolled 
-            ? 'py-3 shadow-xl transform translate-y-0 opacity-100' // FINAL POSITION
+            ? 'py-5 shadow-xl transform translate-y-0 opacity-100' // FINAL POSITION
             : 'py-5 shadow-none opacity-100' // INITIAL POSITION
         }
         

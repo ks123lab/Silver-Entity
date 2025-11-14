@@ -70,7 +70,7 @@ export default function TrustedBrandsSwiper() {
           >
             {clientLogos.map((logo, index) => (
               <SwiperSlide key={index}>
-                <div className="flex items-center justify-center p-4 h-32 border border-gray-200  shadow-sm hover:shadow-md transition duration-300" data-aos="fade-up" data-aos-delay="200"  data-aos-duration="1000">
+                <div className="flex items-center justify-center p-4 h-32 border border-gray-200 rounded-[5px]  shadow-sm hover:shadow-md transition duration-300" data-aos="fade-up" data-aos-delay="200"  data-aos-duration="1000">
                   {/*
                     Using Next/Image for optimized logos.
                     Set width/height to the max size of the logo container.
