@@ -81,11 +81,11 @@ const FAQItem = ({ faq, isOpen, toggleFAQ }:FAQItemProps) => {
 // Main FAQ Section Component
 export default function FAQSection() {
   // State to track the currently open FAQ item's ID
-  const [openId, setOpenId] = useState(faqData[0].id); // First item is open by default (like in the image)
+  const [openId, setOpenId] = useState<number | null>(faqData[0].id); // First item is open by default (like in the image)
 
-  const toggleFAQ = (id) => {
+  const toggleFAQ = (id: number) => {
     // If the clicked item is already open, close it (set to null), otherwise open the clicked item
-    setOpenId(openId === id ? null : id);
+    setOpenId(prev => (prev === id ? null : id));
   };
 
   return (
