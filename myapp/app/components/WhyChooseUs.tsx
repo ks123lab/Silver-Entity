@@ -63,12 +63,12 @@ export default function VerticalCategoryList() {
         {/* Header Section (Based on 'Driven to Deliver' style) */}
         <div className="mb-12 lg:mb-16">
           {/* Small Tag */}
-        <p className='text-4xl text-start md:text-[22px] text-black font-light mb-2 font-montserrat'>Why Choose Us</p>
+        <p className='text-4xl text-start md:text-[22px] text-black font-light mb-2 font-montserrat' data-aos="fade-up" data-aos-delay="100"  data-aos-duration="1000">Why Choose Us</p>
           {/* Main Title */}
-          <h2 className={`text-3xl md:text-[43px] font-light text-gray-900 leading-tight ${fontClass}`}>
+          <h2 className={`text-3xl md:text-[43px] font-light text-gray-900 leading-tight ${fontClass}`} data-aos="fade-up" data-aos-delay="200"  data-aos-duration="1000">
             Our Engineering 
           </h2>
-           <h2 className={`text-3xl md:text-[43px] font-bold text-[#ed6a1f] leading-none ${fontClass}`}>
+           <h2 className={`text-3xl md:text-[43px] font-bold text-[#ed6a1f] leading-none ${fontClass}`} data-aos="fade-up" data-aos-delay="300"  data-aos-duration="1000">
             Expertise  And Innovation
           </h2>
         </div>
@@ -84,7 +84,7 @@ export default function VerticalCategoryList() {
             >
                 
               {/* Column 1: Icon */}
-              <div className="md:col-span-1 flex justify-center md:justify-start">
+              <div className="md:col-span-1 flex justify-center md:justify-start" data-aos="fade-up" data-aos-delay="100"  data-aos-duration="1000">
               
                   <Image
                     src={category.iconSrc}
@@ -96,21 +96,21 @@ export default function VerticalCategoryList() {
               </div>
 
               {/* Column 2: Title (aligned with the image's structure) */}
-              <div className="md:col-span-3 text-center  md:text-left">
+              <div className="md:col-span-3 text-center  md:text-left" data-aos="fade-up" data-aos-delay="200"  data-aos-duration="1000">
                 <h3 className={`text-[24px] font-semibold  text-gray-900 ${fontClass}`}>
                   {category.title}
                 </h3>
               </div>
 
               {/* Column 3: Description (larger central column) */}
-              <div className="md:col-span-7 text-center md:text-left">
+              <div className="md:col-span-7 text-center md:text-left" data-aos="fade-up" data-aos-delay="300"  data-aos-duration="1000">
                 <p className={`text-gray-600 leading-relaxed text-[16px] ${fontClass}`}>
                   {category.description}
                 </p>
               </div>
 
               {/* Column 4: View More Link/Arrow Button */}
-              <div className="md:col-span-1 flex justify-center md:justify-end">
+              <div className="md:col-span-1 flex justify-center md:justify-end" data-aos="fade-up" data-aos-delay="400"  data-aos-duration="1000">
                 <Link 
                   href={category.linkHref} 
                   aria-label={`View more about ${category.title}`}

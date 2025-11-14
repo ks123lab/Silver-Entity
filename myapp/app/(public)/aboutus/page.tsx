@@ -106,20 +106,20 @@ const AirFreightPage = () => {
                         </div>
 
                         <div className="order-1 md:order-2">
-                            <p className='text-4xl text-start md:text-[21px] text-black font-light mb-2 font-montserrat'>About Silver Entity Engineering Solutions</p>
-<h2 className="text-4xl md:text-[43px] font-extrabold text-gray-800 mb-6 leading-tight">
+                            <p className='text-4xl text-start md:text-[21px] text-black font-light mb-2 font-montserrat'data-aos="fade-up" data-aos-delay="100"  data-aos-duration="1000">About Silver Entity Engineering Solutions</p>
+<h2 className="text-4xl md:text-[43px] font-extrabold text-gray-800 mb-6 leading-tight"data-aos="fade-up" data-aos-delay="200"  data-aos-duration="1000">
     Delivering <span className="text-[#ed6a1f]">Engineering Excellence</span> 
 </h2>
-                           <p className="text-[16px] text-gray-900 mb-6 leading-relaxed ">
+                           <p className="text-[16px] text-gray-900 mb-6 leading-relaxed " data-aos="fade-up" data-aos-delay="300"  data-aos-duration="1000">
 Silver Entity Engineering Solutions is a dynamic leader in industrial support and specialized contracting. Our foundation is built on decades of combined experience, providing essential services across various heavy industries, including oil & gas, petrochemicals, and manufacturing. We are dedicated to ensuring the operational integrity and efficiency of our clients' most critical assets.
 </p>
-<p className="text-[16px] text-gray-900 leading-relaxed">
+<p className="text-[16px] text-gray-900 leading-relaxed" data-aos="fade-up" data-aos-delay="400"  data-aos-duration="1000">
 Our comprehensive offering spans electrical & instrumentation, specialized manpower, equipment rental, and full-scale civil and fencing works. By committing to uncompromising safety standards.
 </p>
                          
                             <Link
                                 href="/enquiry"
-                                className="mt-8 inline-flex items-center  bg-[#ed6a1f] text-white font-semibold px-8 py-4 rounded-full shadow-lg transition hover:bg-[#ff6600] group"
+                                className="mt-8 inline-flex items-center  bg-[#ed6a1f] text-white font-semibold px-8 py-4 rounded-full shadow-lg transition hover:bg-[#ff6600] group"data-aos="fade-up" data-aos-delay="400"  data-aos-duration="1000"
                             >
                                 Contact Us <ArrowRight size={20} className="ml-2 rotate-[-40deg] group-hover:rotate-[0deg] transition duration-300" />
                             </Link>
@@ -130,17 +130,17 @@ Our comprehensive offering spans electrical & instrumentation, specialized manpo
             
 
             <section className="relative py-20 bg-gray-50 -mt-20 text-gray-800 ">
-      <div className="md:max-w-[185vh] md:ml-40  md:-mt-[0px] px-4 sm:px-6 lg:px-8">
+      <div className="md:max-w-[155vh] md:ml-40  md:-mt-[0px] px-4 sm:px-6 lg:px-8">
         
         {/* Header Section (Based on 'Driven to Deliver' style) */}
         <div className="mb-12 lg:mb-16 md:ml-4">
           {/* Small Tag */}
-        <p className='text-4xl text-start md:text-[22px] text-black font-light mb-2 font-montserrat'>Why Choose Us</p>
+        <p className='text-4xl text-start md:text-[22px] text-black font-light mb-2 font-montserrat'data-aos="fade-up" data-aos-delay="100"  data-aos-duration="1000">Why Choose Us</p>
           {/* Main Title */}
-          <h2 className={`text-5xl font-light text-gray-900 leading-tight ${fontClass}`}>
+          <h2 className={`text-5xl font-light text-gray-900 leading-tight ${fontClass}`}data-aos="fade-up" data-aos-delay="200"  data-aos-duration="1000">
             Our Engineering 
           </h2>
-           <h2 className={`text-5xl font-extrabold text-[#ed6a1f] leading-none ${fontClass}`}>
+           <h2 className={`text-5xl font-extrabold text-[#ed6a1f] leading-none ${fontClass}`}data-aos="fade-up" data-aos-delay="300"  data-aos-duration="1000">
             Expertise  And Innovation
           </h2>
         </div>
@@ -156,7 +156,7 @@ Our comprehensive offering spans electrical & instrumentation, specialized manpo
             >
                 
               {/* Column 1: Icon */}
-              <div className="md:col-span-1 flex justify-center md:justify-start">
+              <div className="md:col-span-1 flex justify-center md:justify-start" data-aos="fade-up" data-aos-delay="400"  data-aos-duration="1000">
               
                   <Image
                     src={category.iconSrc}
@@ -168,21 +168,21 @@ Our comprehensive offering spans electrical & instrumentation, specialized manpo
               </div>
 
               {/* Column 2: Title (aligned with the image's structure) */}
-              <div className="md:col-span-3 text-center md:text-left">
+              <div className="md:col-span-3 text-center md:text-left" data-aos="fade-up" data-aos-delay="500"  data-aos-duration="1000">
                 <h3 className={`text-3xl font-semibold text-gray-900 ${fontClass}`}>
                   {category.title}
                 </h3>
               </div>
 
               {/* Column 3: Description (larger central column) */}
-              <div className="md:col-span-7 text-center md:text-left">
+              <div className="md:col-span-7 text-center md:text-left"data-aos="fade-up" data-aos-delay="600"  data-aos-duration="1000">
                 <p className={`text-gray-600 leading-relaxed text-[16px] ${fontClass}`}>
                   {category.description}
                 </p>
               </div>
 
               {/* Column 4: View More Link/Arrow Button */}
-              <div className="md:col-span-1 flex justify-center md:justify-end">
+              <div className="md:col-span-1 flex justify-center md:justify-end"data-aos="fade-up" data-aos-delay="700"  data-aos-duration="1000">
                 <Link 
                   href={category.linkHref} 
                   aria-label={`View more about ${category.title}`}

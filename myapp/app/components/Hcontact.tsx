@@ -93,8 +93,8 @@ export default function ContactSectionGeometric() {
                 
                 {/* Header */}
                 <div className="text-center mb-16">
-                    <p className='text-4xl text-center md:text-[22px] text-black font-light mb-2 font-montserrat'>Reach Out</p>
-                    <h2 className="text-4xl md:text-5xl font-light font-montserrat">
+                    <p className='text-4xl text-center md:text-[22px] text-black font-light mb-2 font-montserrat'data-aos="fade-up" data-aos-delay="100"  data-aos-duration="1000">Reach Out</p>
+                    <h2 className="text-4xl md:text-5xl font-light font-montserrat"data-aos="fade-up" data-aos-delay="200"  data-aos-duration="1000">
                         Let's Discuss Your <span className='text-4xl md:text-5xl font-semibold font-montserrat'>Project</span>
                     </h2>
                 </div>
@@ -104,7 +104,7 @@ export default function ContactSectionGeometric() {
                     
                     {/* 1. Left Block: Contact Information (Dark Accent) */}
                     {/* Added shadow offset for depth */}
-                    <div className="bg-[#ed6a1f] p-8 md:p-12 rounded-xl shadow-2xl relative z-10 lg:w-[40%] lg:absolute lg:top-0 lg:left-0 lg:shadow-[-20px_20px_40px_rgba(0,0,0,0.3)]">
+                    <div className="bg-[#ed6a1f] p-8 md:p-12 rounded-xl shadow-2xl relative z-10 lg:w-[40%] lg:absolute lg:top-0 lg:left-0 lg:shadow-[-20px_20px_40px_rgba(0,0,0,0.3)]"data-aos="fade-up" data-aos-delay="300"  data-aos-duration="1000">
                         <h3 className="text-3xl font-bold font-serif text-white mb-8">
                             Ready to Start?
                         </h3>
@@ -135,7 +135,7 @@ export default function ContactSectionGeometric() {
 
                     {/* 2. Right Block: Form (White/Light Accent) */}
                     {/* Added offset and adjusted z-index for overlapping effect */}
-                    <div className="bg-white p-8 md:p-12 rounded-xl shadow-2xl mt-12 lg:mt-0 lg:w-[68%] lg:absolute lg:top-12 lg:right-0 relative z-20 lg:shadow-[20px_20px_40px_rgba(0,0,0,0.1)]">
+                    <div className="bg-white p-8 md:p-12 rounded-xl shadow-2xl mt-12 lg:mt-0 lg:w-[68%] lg:absolute lg:top-12 lg:right-0 relative z-20 lg:shadow-[20px_20px_40px_rgba(0,0,0,0.1)]" data-aos="fade-up" data-aos-delay="400"  data-aos-duration="1000">
                         <h3 className="text-2xl font-bold mb-8 font-montserrat text-gray-900">
                             Project Enquiry Form
                         </h3>

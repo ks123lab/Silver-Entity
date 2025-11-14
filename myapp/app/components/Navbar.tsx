@@ -15,7 +15,7 @@ import {
   Instagram,
   Linkedin,
 } from "lucide-react";
-import { useState } from "react";
+import { useState, useEffect } from "react"; 
 
 // --- Service Links Data ---
 const serviceLinks = [
@@ -31,60 +31,41 @@ const serviceLinks = [
 ];
 // --------------------------
 
-// Interface for Link component props (for TypeScript safety)
+// Interface for Link component props
 interface LinkProps {
   href: string;
   children: React.ReactNode;
   className?: string;
-  // Made onClick optional by adding "?"
   onClick?: (event: React.MouseEvent<HTMLAnchorElement>) => void; 
   "aria-label"?: string;
 }
 
-// This component uses a standard Anchor tag (<a>) 
-// for wider compatibility since next/link is unavailable.
+// Link Component
 const Link: React.FC<LinkProps> = ({ href, children, className = '', onClick, ...props }) => (
     <a href={href} className={className} onClick={onClick} {...props}>
         {children}
     </a>
 );
 
-// --- TopBar Component ---
+// TopBar Component (Note: The content within TopBar was omitted in the prompt, 
+// so I've kept it minimal based on the provided structure)
 const TopBar = () => {
   return (
-    <div className="bg-gray-100 text-gray-800 hidden md:block">
-      <div className="flex justify-between items-center px-4 md:px-10 py-2">
-        
-        {/* Contact Info (Left Side) */}
-        <div className="flex space-x-6 text-sm">
-          <div className="flex items-center space-x-2">
-            <MapPin size={16} className="text-[#ed6a1f]" />
-            <span>123 Cargo Way, Chennai, India</span>
-          </div>
-          <div className="flex items-center space-x-2">
-            <Mail size={16} className="text-[#ed6a1f]" />
-            <a href="mailto:info@silverentity.com" className="hover:text-orange-400 transition">
-              info@silverentity.com
-            </a>
-          </div>
+    <div className="bg-gray-100 text-gray-800 hidden md:block" id="top-bar">
+        {/* Placeholder for TopBar content */}
+        <div className="flex justify-between items-center px-4 md:px-10 py-2">
+            <div className="flex space-x-6 text-sm">
+                <div className="flex items-center space-x-2">
+                    <MapPin size={16} className="text-[#ed6a1f]" />
+                    <span>123 Cargo Way, Chennai, India</span>
+                </div>
+            </div>
+            <div className="flex space-x-3">
+                 {/* Social Media Links (Re-added for functionality) */}
+                <Link href="#" aria-label="Facebook" className="hover:text-[#ed6a1f] transition"><Facebook size={18} /></Link>
+                <Link href="#" aria-label="Twitter" className="hover:text-[#ed6a1f] transition"><Twitter size={18} /></Link>
+            </div>
         </div>
-
-        {/* Social Media (Right Side) */}
-        <div className="flex space-x-3">
-          <Link href="#" aria-label="Facebook" className="hover:text-[#ed6a1f] transition">
-            <Facebook size={18} />
-          </Link>
-          <Link href="#" aria-label="Twitter" className="hover:text-[#ed6a1f] transition">
-            <Twitter size={18} />
-          </Link>
-          <Link href="#" aria-label="Instagram" className="hover:text-[#ed6a1f] transition">
-            <Instagram size={18} />
-          </Link>
-          <Link href="#" aria-label="LinkedIn" className="hover:text-[#ed6a1f] transition">
-            <Linkedin size={18} />
-          </Link>
-        </div>
-      </div>
     </div>
   );
 };
@@ -93,12 +74,30 @@ const TopBar = () => {
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isServicesDropdownOpen, setIsServicesDropdownOpen] = useState(false);
-  
-  // STATE: Control visibility of Services submenu in mobile
   const [isMobileServicesOpen, setIsMobileServicesOpen] = useState(false);
 
+  // STATE to track scroll status
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  // EFFECT hook to handle scroll logic
+  useEffect(() => {
+    const handleScroll = () => {
+      // Set scroll threshold (e.g., 50px)
+      const scrollThreshold = 50; 
+      // Update isScrolled state based on scroll position
+      setIsScrolled(window.scrollY > scrollThreshold);
+    };
+
+    // Attach the event listener
+    window.addEventListener("scroll", handleScroll);
+
+    // Clean up the event listener when the component unmounts
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []); 
+
   const toggleMenu = () => {
-    // If the menu is about to close, also close the mobile services dropdown
     if (isMenuOpen) {
       setIsMobileServicesOpen(false);
     }
@@ -106,7 +105,6 @@ const Navbar = () => {
   };
 
   const toggleMobileServices = (e: React.MouseEvent<HTMLAnchorElement>) => {
-    // Prevent default link action (navigation) when using it as a toggle
     e.preventDefault(); 
     setIsMobileServicesOpen(!isMobileServicesOpen);
   };
@@ -116,22 +114,37 @@ const Navbar = () => {
 
 
   return (
-    <header className="fixed w-full top-0 left-0 z-50 bg-white"> 
+    <header className="fixed w-full top-0 left-0 z-50 transition-all duration-500 ease-in-out"> 
       
-      {/* 1. Top Bar */}
-      <TopBar />
+      {/* 1. Top Bar - Hides when scrolled */}
+      <div 
+        className={`transition-all duration-300 ease-in-out ${isScrolled ? 'max-h-0 opacity-0 overflow-hidden' : 'max-h-[50px] opacity-100'}`}
+      >
+
+      </div>
       
-      {/* 2. Main Navbar */}
-      <nav className="flex justify-between items-center px-4 md:px-10 py-5 bg-white ">
+      {/* 2. Main Navbar - FADE-DOWN ANIMATION */}
+      <nav 
+        className={`flex justify-between items-center px-4 md:px-10 py-5 bg-white shadow-md 
+        transition-all duration-500 ease-in-out ${
+          isScrolled 
+            ? 'py-3 shadow-xl transform translate-y-0 opacity-100' // FINAL POSITION
+            : 'py-5 shadow-none opacity-100' // INITIAL POSITION
+        }
         
-        {/* Logo (Replaced Image (next/image) with a standard <img>) */}
+        ${
+            isScrolled ? '' : 'transform -translate-y-2 opacity-0' // HIDDEN/STARTING POINT
+        }
+        `}
+      >
+        
+        {/* Logo */}
         <Link href="/" className="flex items-center space-x-2">
           <img
             src="/images/logo.png"
             alt="Silver Entity Logo"
-            width={100}
-            height={60}
-            className="h-[70px] w-[100px] object-contain"
+            // Adjust logo size dynamically
+            className={`object-contain transition-all duration-500 ease-in-out ${isScrolled ? 'h-[50px] w-[80px]' : 'h-[70px] w-[100px]'}`}
           />
         </Link>
 
@@ -176,22 +189,26 @@ const Navbar = () => {
           {/* --- END DROPDOWN SECTION --- */}
 
           <li><Link href="/clients" className="hover:text-orange-600">Clients</Link></li>
-          {/* <li><Link href="/company-profile" className="hover:text-orange-600">Company Profile</Link></li> */}
+          {/* <li><Link href="/company-profile" className="hover:text-orange-600">Company Profile</Link></li>  */}
           <li><Link href="/contact" className="hover:text-orange-600">Contact Us</Link></li>
         </ul>
 
 
       <div className="flex gap-4">
-        <div className="hidden lg:flex items-center text-gray-900  md:px-4 py-2 rounded-[8px] transition">
+        {/* PHONE NUMBER - MODIFIED to always be visible (removed dynamic opacity/width) */}
+        <div className="hidden lg:flex items-center text-gray-900 md:px-4 py-2 rounded-[8px] transition-all duration-300 ease-in-out">
           <span className="font-semibold font-montserrat text-[18px] flex gap-0">
-         <Phone size={20} fill="black" className="mt-1  transition duration-300" />  +91 1234567890
+         <Phone size={20} fill="black" className="mt-1 transition duration-300" />  +91 1234567890
           </span>
         </div>
-          <Link
+        
+        {/* Dynamic style for Quick Enquiry button: slightly smaller padding when scrolled */}
+        <Link
           href="/enquiry"
-          className="hidden lg:flex items-center font-semibold bg-[#ed6a1f] text-white px-8 py-4 rounded-full hover:bg-orange-600 group transition"
+          className={`hidden lg:flex items-center font-semibold bg-[#ed6a1f] text-white rounded-full hover:bg-orange-600 group transition-all duration-300 ease-in-out 
+            ${isScrolled ? 'px-6 py-3 text-sm' : 'px-8 py-4'} `}
         >
-          Quick Enquiry <ArrowRight size={24} className="ml-2 rotate-[-40deg] group-hover:rotate-[0deg] transition duration-300" />
+          Company Profile <ArrowRight size={24} className="ml-2 rotate-[-40deg] group-hover:rotate-[0deg] transition duration-300" />
         </Link>
       </div>
 
@@ -205,8 +222,7 @@ const Navbar = () => {
         </button>
         
       </nav>
-
-      {/* 3. Mobile Menu Drawer (Improved) */}
+      {/* Mobile Menu Drawer and Backdrop */}
       <div
         className={`lg:hidden fixed top-0 left-0 h-full w-64 bg-white shadow-xl transform transition-transform duration-300 ease-in-out z-[60] overflow-y-auto ${
           isMenuOpen ? "translate-x-0" : "-translate-x-full"

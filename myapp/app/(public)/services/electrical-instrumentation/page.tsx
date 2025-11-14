@@ -100,8 +100,8 @@ We specialize in industrial and commercial E&I solutions, offering complete desi
             {/* Gallery Section with Clickable Slider */}
             <section className="relative w-full overflow-hidden bg-gray-100 py-16">
                 <div className="container mx-auto px-4 md:px-10 text-center mb-10">
-                    <h2 className="text-3xl font-bold text-gray-800 mb-2">Our Recent E&I Projects</h2>
-                    <p className="text-gray-600">A showcase of our precision electrical and instrumentation works.</p>
+                    {/* <h2 className="text-3xl font-bold text-gray-800 mb-2">Our Recent E&I Projects</h2> */}
+                    {/* <p className="text-gray-600">A showcase of our precision electrical and instrumentation works.</p> */}
                 </div>
 
                 {/* Swiper Slider Container */}

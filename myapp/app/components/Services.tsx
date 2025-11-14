@@ -65,8 +65,8 @@ export default function MaterialsServiceShowcase() {
         {/* Header */}
         <div className="text-start ml-28 mb-16">
         
-       <p className='text-4xl text-start md:text-[22px] text-black font-light mb-2 font-montserrat'>Our Services</p>
-          <h2 className="text-4xl text-start md:text-[43px] text-black font-light mb-2 font-montserrat" data-aos="fade-up"  data-aos-duration="1000">
+       <p className='text-4xl text-start md:text-[22px] text-black font-light mb-2 font-montserrat'  data-aos="fade-up"   data-aos-duration="1000">Our Services</p>
+          <h2 className="text-4xl text-start md:text-[43px] text-black font-light mb-2 font-montserrat"  data-aos="fade-up" data-aos-delay="100"  data-aos-duration="1000">
             Efficient and Reliable
           </h2>
             <h2 className="text-4xl text-start text-[#ed6a1f] md:text-[43px] font-bold font-montserrat" data-aos="fade-up" data-aos-delay="200"  data-aos-duration="1000">

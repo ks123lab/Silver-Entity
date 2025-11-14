@@ -51,9 +51,9 @@ const FourCards = () => {
 
           {/* LEFT TEXT BLOCK */}
           <div className="md:col-span-3 bg-[#5c5c5c] py-24  p-8 sm:p-12 lg:p-16 flex flex-col">
-            <h2 className="text-4xl lg:text-[43px] hidden md:block text-white mb-6 -mt-10 ml-10 md:ml-28 leading-tight text-left md:text-left">
+            <h2 className="text-4xl lg:text-[43px] hidden md:block text-white mb-6 -mt-10 ml-10 md:ml-28 leading-tight text-left md:text-left" data-aos="fade-up" data-aos-delay="100"  data-aos-duration="1000">
               Transforming{" "}
-              <span className="text-4xl lg:text-[43px] font-extrabold text-white leading-tight">
+              <span className="text-4xl lg:text-[43px] font-extrabold text-white leading-tight" >
                 Innovation,
               </span>
               <br />
@@ -98,7 +98,7 @@ const FourCards = () => {
             {featureCards.map((card, index) => (
               <div
                 key={index}
-                className={`p-6 md:p-8 flex flex-col justify-start rounded-[20px] ${card.bgColor} ${card.titleColor}`}
+                className={`p-6 md:p-8 flex flex-col justify-start rounded-[20px] ${card.bgColor} ${card.titleColor}`} data-aos="fade-up" data-aos-delay="200"  data-aos-duration="1000"
                 style={{ borderRadius: "20px" }}
               >
                 <h4

@@ -34,7 +34,7 @@ export default function TrustedBrandsSwiper() {
       <div className="max-w-[176vh] md:ml-24 px-4 sm:px-6 lg:px-8 -mb-20">
         
         {/* Title */}
-        <h2 className="text-4xl md:text-[43px] font-semibold text-gray-800 text-center mt-6">
+        <h2 className="text-4xl md:text-[43px] font-semibold text-gray-800 text-center mt-6"data-aos="fade-up" data-aos-delay="100"  data-aos-duration="1000">
           Trusted by Leading Brands
         </h2>
 
@@ -70,7 +70,7 @@ export default function TrustedBrandsSwiper() {
           >
             {clientLogos.map((logo, index) => (
               <SwiperSlide key={index}>
-                <div className="flex items-center justify-center p-4 h-32 border border-gray-200  shadow-sm hover:shadow-md transition duration-300">
+                <div className="flex items-center justify-center p-4 h-32 border border-gray-200  shadow-sm hover:shadow-md transition duration-300" data-aos="fade-up" data-aos-delay="200"  data-aos-duration="1000">
                   {/*
                     Using Next/Image for optimized logos.
                     Set width/height to the max size of the logo container.

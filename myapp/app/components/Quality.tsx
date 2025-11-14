@@ -55,19 +55,19 @@ const Process = () => {
  md:mx-0 
  "
 >
- <p className='text-4xl text-start md:text-[20px] text-white font-light mb-2 font-montserrat'>Silver Entity Engineering Solutions</p>
+ <p className='text-4xl text-start md:text-[20px] text-white font-light mb-2 font-montserrat' data-aos="fade-up"   data-aos-duration="1000">Silver Entity Engineering Solutions</p>
 
 <div className='leading-tight'>
-     <h2 className="text-[32px] md:text-[43px] font-montserrat font-bold text-white">
+     <h2 className="text-[32px] md:text-[43px] font-montserrat font-bold text-white" data-aos="fade-up" data-aos-delay="100"  data-aos-duration="1000">
 Building Your Dreams
  </h2>
- <h2 className="text-[32px] md:text-[43px] font-montserrat font-bold mb-4 text-white">
+ <h2 className="text-[32px] md:text-[43px] font-montserrat font-bold mb-4 text-white" data-aos="fade-up" data-aos-delay="200"  data-aos-duration="1000">
 With Quality
 </h2>
 </div>
 
  {/* Paragraph text color is kept light (gray-200) for contrast on orange/dark background */}
- <p className="text-base mb-8 leading-relaxed text-gray-100 ">
+ <p className="text-base mb-8 leading-relaxed text-gray-100 " data-aos="fade-up" data-aos-delay="300"  data-aos-duration="1000">
  Quality is the cornerstone of Silver Entity Engineering Works' approach
 to every project we undertake. From the materials we source to the
 skilled workforce we deploy, every aspect of our work reflects a commitment to excellence.
@@ -75,23 +75,23 @@ skilled workforce we deploy, every aspect of our work reflects a commitment to e
 
  {/* List items are white on mobile for contrast, switch to desktop gray-800 if they overlap the white background */}
  <ul className="space-y-3  text-white md:text-gray-800">
- <li className="flex items-start gap-2">
+ <li className="flex items-start gap-2" data-aos="fade-up" data-aos-delay="400"  data-aos-duration="1000">
 <CheckCircle fill="#ed6a1f" className="text-white w-5 h-5 mt-1" />
 <span>Understanding client requirements</span>
 </li>
 
- <li className="flex items-start gap-2">
+ <li className="flex items-start gap-2" data-aos="fade-up" data-aos-delay="500"  data-aos-duration="1000">
 <CheckCircle fill="#ed6a1f" className="text-white w-5 h-5 mt-1" />
  <span>Strategic planning and execution</span>
  </li>
 
- <li className="flex items-start gap-2">
+ <li className="flex items-start gap-2" data-aos="fade-up" data-aos-delay="600"  data-aos-duration="1000">
  <CheckCircle fill="#ed6a1f" className="text-white w-5 h-5 mt-1 mb-2" />
  <span>Quality checks and timely delivery</span>
  </li>
  </ul>
 
- <div className="w-32 px-4 py-4  rounded-[6px] text-sm font-bold font-montserrat bg-white md:bg-[#ed6a1f]">
+ <div className="w-32 px-4 py-4  rounded-[6px] text-sm font-bold font-montserrat bg-white md:bg-[#ed6a1f]" data-aos="fade-up" data-aos-delay="700"  data-aos-duration="1000">
  <button className='md:text-white text-gray-900'>Know more</button>
  </div>
 </div>

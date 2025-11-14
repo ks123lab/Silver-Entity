@@ -22,15 +22,15 @@ export default function SimpleBackgroundPage() {
 
       {/* Centered Title */}
       <div className="absolute inset-0 flex flex-col left-50 items-start justify-center  ml-10 space-x-4">
-        <p className=" text-[22px] font-bold text-white md:ml-1 md:w-60 h-8  font-light  ">Provide the best</p>
-        <h1 className="text-6xl md:text-[70px] border-b border-white w-[146vh] text-start py-6 font-bold text-white text-center " >
+        <p className=" text-[22px] font-bold text-white md:ml-1 md:w-60 h-8  font-light " data-aos="fade-up" data-aos-delay="100"  data-aos-duration="1000">Provide the best</p>
+        <h1 className="text-6xl md:text-[70px] border-b border-white w-[146vh] text-start py-6 font-bold text-white text-center " data-aos="fade-up" data-aos-delay="200"  data-aos-duration="1000">
           Your Project, Our Priority<br />
         </h1> <br />
       <div className="w-[146vh] flex items-center justify-between ">
-         <p className=" text-[16px] font-  text-white md:ml-1  h-8 md:mb-0">We aim to go beyond expectation consistently in delivery, quality, reliability and service.</p>
+         <p className=" text-[16px] font-  text-white md:ml-1  h-8 md:mb-0"data-aos="fade-up" data-aos-delay="300"  data-aos-duration="1000">We aim to go beyond expectation consistently in delivery, quality, reliability and service.</p>
           <Link
                  href="/enquiry"
-                 className="hidden lg:flex items-center font-semibold bg-[#ed6a1f] text-white px-8 py-4 rounded-[8px] hover:bg-orange-600 group transition"
+                 className="hidden lg:flex items-center font-semibold bg-[#ed6a1f] text-white px-8 py-4 rounded-[8px] hover:bg-orange-600 group transition"data-aos="fade-up" data-aos-delay="300"  data-aos-duration="1000"
                >
                  GET IN TOUCH <ArrowRight size={24} className="ml-2 rotate-[-40deg] group-hover:rotate-[0deg] transition duration-300" />
                </Link>

@@ -45,7 +45,7 @@ export default function HeroSlider() {
 
   return (
     // FINAL CORRECTION: Using h-[85vh] for better visual height and pt-[130px] for generous navbar offset.
-    <section className="relative h-[70vh] md:rounded-[20px] md:mx-4 pt-[200px] mt-40 overflow-hidden">
+    <section className="relative h-[70vh] md:rounded-[20px] md:mx-4 pt-[200px] mt-25 overflow-hidden">
       
       {/* Background Image Container */}
       <AnimatePresence initial={false}>

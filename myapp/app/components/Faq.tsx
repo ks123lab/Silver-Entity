@@ -98,21 +98,21 @@ export default function FAQSection() {
           {/* Left Column: Title and Intro (4/12 width) */}
           <div className="lg:col-span-4 w-[500px] lg:sticky  lg:top-10">
             <div className="inline-block  text-sm font-semibold  text-gray-600 rounded-full mb-2">
-              <p className='text-4xl text-start md:text-[22px] text-black font-light  font-montserrat'>Faq</p>
+              <p className='text-4xl text-start md:text-[22px] text-black font-light  font-montserrat'data-aos="fade-up" data-aos-delay="100"  data-aos-duration="1000">Faq</p>
             </div>
             
-            <h2 className="text-[43px] font-light leading-tight mb-6">
+            <h2 className="text-[43px] font-light leading-tight mb-6" data-aos="fade-up" data-aos-delay="200"  data-aos-duration="1000">
               <span className="text-orange-600 font-bold ">Frequently Asked  Questions</span> About Silver Entity Engineering
             </h2>
             
-            <p className="text-gray-600 font-medium leading-relaxed text-sm">
+            <p className="text-gray-600 font-medium leading-relaxed text-sm"data-aos="fade-up" data-aos-delay="300"  data-aos-duration="1000">
               We believe in clear communication and transparent processes. To help you understand more about our approach, project management, and specialized services, we've answered some of the most common questions we receive from clients and partners below.
             </p>
           </div>
           
           {/* Right Column: Accordion List (8/12 width) */}
           <div className="lg:col-span-8">
-            <div className="divide-y divide-gray-200">
+            <div className="divide-y divide-gray-200"data-aos="fade-up" data-aos-delay="400"  data-aos-duration="1000">
               {faqData.map((faq) => (
                 <FAQItem 
                   key={faq.id} 
