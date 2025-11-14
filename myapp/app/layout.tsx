@@ -1,8 +1,8 @@
-import "../globals.css";
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
+import "./globals.css";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 // import SmoothScrollWrapper from "./components/SmoothScrollWrapper";
-import { AOSInit } from '../components/AOS'; 
+import { AOSInit } from './components/AOS'; 
 
 export const metadata = {
   title: "Silver Entity Engineering Solutions | Home",
