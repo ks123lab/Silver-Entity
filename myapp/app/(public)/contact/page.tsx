@@ -1,5 +1,8 @@
 "use client";
 
+import Hcontact from "@/app/components/Hcontact";
+import { Hammer } from "lucide-react";
+import Link from "next/link";
 import { useState } from "react";
 
 
@@ -32,49 +35,28 @@ export default function Home() {
 
     return (
     <>
-    
-      <div className="min-h-screen flex items-center justify-center bg-gray-100 px-4">
-        <div className="bg-white shadow-lg rounded-lg p-8 w-full max-w-md">
-          <h2 className="text-2xl font-semibold text-black text-center mb-6">
-            Contact Us
-          </h2>
-          <form onSubmit={handleSubmit} className="space-y-4">
-            <input
-              type="text"
-              name="name"
-              value={formData.name}
-              onChange={handleChange}
-              placeholder="Your Name"
-              className="w-full border border-gray-300 rounded-lg p-3"
-              required
-            />
-            <input
-              type="email"
-              name="email"
-              value={formData.email}
-              onChange={handleChange}
-              placeholder="Your Email"
-              className="w-full border border-gray-300 rounded-lg p-3"
-              required
-            />
-            <textarea
-              name="message"
-              value={formData.message}
-              onChange={handleChange}
-              placeholder="Your Message"
-              className="w-full border border-gray-300 text-black rounded-lg p-3"
-              rows={4}
-              required
-            ></textarea>
-            <button
-              type="submit"
-              className="w-full bg-blue-600 hover:bg-blue-700 text-white py-2 rounded-lg font-semibold"
-            >
-              Send Message
-            </button>
-          </form>
-        </div>
-      </div>
+      <section className="relative py-20 md:py-32 mt-20 bg-gray-900  overflow-hidden">
+                <div className="absolute inset-0 bg-black/30 z-0"></div>
+                <div 
+                    className="absolute inset-0 bg-cover bg-center opacity-30 z-0" 
+                    style={{ backgroundImage: "url('/images/building1.webp')" }} 
+                    role="img" 
+                    aria-label="Image of cargo being loaded onto an airplane"
+                />
+
+                <div className="relative z-10 container mx-auto px-4 md:px-10 text-center">
+                    <Hammer size={64} className="mx-auto text-[#cf081f] mb-4" />
+                    <h1 className="text-5xl md:text-[43px] font-extrabold text-white mb-4">
+                        Clients
+                    </h1>
+                    <div className='text-gray-300 font-semibold flex gap-2 justify-center'>
+                        <Link href="/" className="hover:text-white transition duration-300">Home</Link>
+                        <span>/</span>
+                        <Link href="/aboutus" className="hover:text-white transition duration-300">AboutUs</Link>
+                    </div>
+                </div>
+            </section>
+    <Hcontact/>
     </>
   );
 }

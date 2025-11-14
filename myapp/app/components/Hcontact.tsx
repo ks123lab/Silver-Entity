@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react';
 import Link from 'next/link';
-import { Mail, Phone, MapPin, Send } from 'lucide-react';
+import { Mail, Phone, MapPin, Send, ArrowRight } from 'lucide-react';
 
 
 // Input field common styling for this design (Moved up for clarity)
@@ -93,9 +93,7 @@ export default function ContactSectionGeometric() {
                 
                 {/* Header */}
                 <div className="text-center mb-16">
-                    <p className="text-[14px] font-semibold uppercase text-gray-600 mb-2 font-montserrat">
-                        — REACH OUT 
-                    </p>
+                    <p className='text-4xl text-center md:text-[22px] text-black font-light mb-2 font-montserrat'>Reach Out</p>
                     <h2 className="text-4xl md:text-5xl font-light font-montserrat">
                         Let's Discuss Your <span className='text-4xl md:text-5xl font-semibold font-montserrat'>Project</span>
                     </h2>
@@ -172,7 +170,7 @@ export default function ContactSectionGeometric() {
                                     name="phone" 
                                     value={formData.phone}
                                     onChange={handleChange}
-                                    placeholder="Phone Number (Optional)" 
+                                    placeholder="Phone Number" 
                                     className={inputClassesGeo} 
                                 />
                                 {/* Subject (FIX 3: Added name/value/onChange) */}
@@ -193,7 +191,7 @@ export default function ContactSectionGeometric() {
                                     name="message"
                                     value={formData.message}
                                     onChange={handleChange}
-                                    placeholder="Tell Us About Your Project" 
+                                    placeholder="Enter Your Message" 
                                     rows={5} 
                                     required 
                                     className={`${inputClassesGeo} resize-none`} 
@@ -203,10 +201,10 @@ export default function ContactSectionGeometric() {
                             {/* Submit Button */}
                             <button
                                 type="submit"
-                                className="flex items-center justify-center space-x-2 bg-[#ed6a1f] text-white font-bold py-3 px-8 rounded-lg hover:bg-[#a3b18a] transition duration-300 shadow-lg"
+                                className="flex items-center group justify-center space-x-2 bg-[#ed6a1f] text-white font-bold py-3 px-8 rounded-lg hover:bg-[#ff6600] transition duration-300 shadow-lg"
                             >
-                                <Send className="w-5 h-5" />
-                                <span>Submit Enquiry</span>
+                                
+                                <span>Submit Enquiry</span><ArrowRight className="w-5 h-5 rotate-[-40deg] transition duration-500 group-hover:rotate-[0deg]" />
                             </button>
                         </form>
                     </div>
