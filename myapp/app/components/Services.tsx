@@ -69,7 +69,7 @@ export default function MaterialsServiceShowcase() {
           <h2 className="text-4xl text-start md:text-[43px] text-black font-light mb-2 font-montserrat" data-aos="fade-up"  data-aos-duration="1000">
             Efficient and Reliable
           </h2>
-            <h2 className="text-4xl text-start text-[#ed6a1f] md:text-[43px] font-extrabold font-montserrat" data-aos="fade-up" data-aos-delay="200"  data-aos-duration="1000">
+            <h2 className="text-4xl text-start text-[#ed6a1f] md:text-[43px] font-bold font-montserrat" data-aos="fade-up" data-aos-delay="200"  data-aos-duration="1000">
             Global Solutions
           </h2>
         </div>

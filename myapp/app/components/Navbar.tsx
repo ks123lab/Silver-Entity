@@ -52,17 +52,17 @@ const Link: React.FC<LinkProps> = ({ href, children, className = '', onClick, ..
 // --- TopBar Component ---
 const TopBar = () => {
   return (
-    <div className="bg-[#5c5c5c] text-white hidden md:block">
+    <div className="bg-gray-100 text-gray-800 hidden md:block">
       <div className="flex justify-between items-center px-4 md:px-10 py-2">
         
         {/* Contact Info (Left Side) */}
         <div className="flex space-x-6 text-sm">
           <div className="flex items-center space-x-2">
-            <MapPin size={16} className="text-[#cf081f]" />
+            <MapPin size={16} className="text-[#ed6a1f]" />
             <span>123 Cargo Way, Chennai, India</span>
           </div>
           <div className="flex items-center space-x-2">
-            <Mail size={16} className="text-[#cf081f]" />
+            <Mail size={16} className="text-[#ed6a1f]" />
             <a href="mailto:info@silverentity.com" className="hover:text-orange-400 transition">
               info@silverentity.com
             </a>
@@ -71,16 +71,16 @@ const TopBar = () => {
 
         {/* Social Media (Right Side) */}
         <div className="flex space-x-3">
-          <Link href="#" aria-label="Facebook" className="hover:text-[#cf081f] transition">
+          <Link href="#" aria-label="Facebook" className="hover:text-[#ed6a1f] transition">
             <Facebook size={18} />
           </Link>
-          <Link href="#" aria-label="Twitter" className="hover:text-[#cf081f] transition">
+          <Link href="#" aria-label="Twitter" className="hover:text-[#ed6a1f] transition">
             <Twitter size={18} />
           </Link>
-          <Link href="#" aria-label="Instagram" className="hover:text-[#cf081f] transition">
+          <Link href="#" aria-label="Instagram" className="hover:text-[#ed6a1f] transition">
             <Instagram size={18} />
           </Link>
-          <Link href="#" aria-label="LinkedIn" className="hover:text-[#cf081f] transition">
+          <Link href="#" aria-label="LinkedIn" className="hover:text-[#ed6a1f] transition">
             <Linkedin size={18} />
           </Link>
         </div>
@@ -122,7 +122,7 @@ const Navbar = () => {
       <TopBar />
       
       {/* 2. Main Navbar */}
-      <nav className="flex justify-between items-center px-4 md:px-10 py-7 bg-white ">
+      <nav className="flex justify-between items-center px-4 md:px-10 py-5 bg-white ">
         
         {/* Logo (Replaced Image (next/image) with a standard <img>) */}
         <Link href="/" className="flex items-center space-x-2">
@@ -164,7 +164,7 @@ const Navbar = () => {
                     <Link
                         key={service.name}
                         href={service.href}
-                        className="block px-4 py-3 text-gray-900 hover:bg-gray-100 hover:text-[#cf081f] transition"
+                        className="block px-4 py-3 text-gray-900 hover:bg-gray-100 hover:text-[#ed6a1f] transition"
                         onClick={handleMouseLeave}
                     >
                         {service.name}
@@ -182,14 +182,14 @@ const Navbar = () => {
 
 
       <div className="flex gap-4">
-        <div className="hidden lg:flex items-center text-white bg-black md:px-4 py-2 rounded-[8px] transition">
-          <span className="font-semibold font-montserrat text-[16px]">
-            +91 1234567890
+        <div className="hidden lg:flex items-center text-gray-900  md:px-4 py-2 rounded-[8px] transition">
+          <span className="font-semibold font-montserrat text-[18px] flex gap-0">
+         <Phone size={20} fill="black" className="mt-1  transition duration-300" />  +91 1234567890
           </span>
         </div>
           <Link
           href="/enquiry"
-          className="hidden lg:flex items-center font-semibold bg-[#ed6a1f] text-white px-8 py-4 rounded-[8px] hover:bg-orange-600 group transition"
+          className="hidden lg:flex items-center font-semibold bg-[#ed6a1f] text-white px-8 py-4 rounded-full hover:bg-orange-600 group transition"
         >
           Quick Enquiry <ArrowRight size={24} className="ml-2 rotate-[-40deg] group-hover:rotate-[0deg] transition duration-300" />
         </Link>
@@ -248,7 +248,7 @@ const Navbar = () => {
                       <Link 
                           href={service.href} 
                           onClick={toggleMenu} // Closes the entire menu when service link is tapped
-                          className="block py-1 text-gray-600 hover:text-[#cf081f] transition"
+                          className="block py-1 text-gray-600 hover:text-[#ed6a1f] transition"
                       >
                           {service.name}
                       </Link>
@@ -275,7 +275,7 @@ const Navbar = () => {
 
             {/* Mobile Phone Number */}
             <div className="flex items-center space-x-2 text-gray-900">
-              <Phone size={18} className="text-[#cf081f]" />
+              <Phone size={18} className="text-[#ed6a1f]" />
               <span className="font-semibold text-base">
                 +91-6362514956
               </span>

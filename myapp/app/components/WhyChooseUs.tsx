@@ -65,10 +65,10 @@ export default function VerticalCategoryList() {
           {/* Small Tag */}
         <p className='text-4xl text-start md:text-[22px] text-black font-light mb-2 font-montserrat'>Why Choose Us</p>
           {/* Main Title */}
-          <h2 className={`text-5xl font-light text-gray-900 leading-tight ${fontClass}`}>
+          <h2 className={`text-3xl md:text-[43px] font-light text-gray-900 leading-tight ${fontClass}`}>
             Our Engineering 
           </h2>
-           <h2 className={`text-5xl font-extrabold text-[#ed6a1f] leading-none ${fontClass}`}>
+           <h2 className={`text-3xl md:text-[43px] font-bold text-[#ed6a1f] leading-none ${fontClass}`}>
             Expertise  And Innovation
           </h2>
         </div>
@@ -96,8 +96,8 @@ export default function VerticalCategoryList() {
               </div>
 
               {/* Column 2: Title (aligned with the image's structure) */}
-              <div className="md:col-span-3 text-center md:text-left">
-                <h3 className={`text-3xl font-semibold text-gray-900 ${fontClass}`}>
+              <div className="md:col-span-3 text-center  md:text-left">
+                <h3 className={`text-[24px] font-semibold  text-gray-900 ${fontClass}`}>
                   {category.title}
                 </h3>
               </div>

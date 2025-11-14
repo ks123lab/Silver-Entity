@@ -34,7 +34,7 @@ export default function TrustedBrandsSwiper() {
       <div className="max-w-[176vh] md:ml-24 px-4 sm:px-6 lg:px-8 -mb-20">
         
         {/* Title */}
-        <h2 className="text-4xl md:text-[43px] font-semibold text-gray-800 text-center mt-10">
+        <h2 className="text-4xl md:text-[43px] font-semibold text-gray-800 text-center mt-6">
           Trusted by Leading Brands
         </h2>
 

@@ -57,12 +57,14 @@ const Process = () => {
 >
  <p className='text-4xl text-start md:text-[20px] text-white font-light mb-2 font-montserrat'>Silver Entity Engineering Solutions</p>
 
- <h2 className="text-[32px] md:text-[43px] font-montserrat font-light text-white">
+<div className='leading-tight'>
+     <h2 className="text-[32px] md:text-[43px] font-montserrat font-bold text-white">
 Building Your Dreams
  </h2>
- <h2 className="text-[32px] md:text-[43px] font-montserrat font-extrabold mb-4 text-white">
+ <h2 className="text-[32px] md:text-[43px] font-montserrat font-bold mb-4 text-white">
 With Quality
 </h2>
+</div>
 
  {/* Paragraph text color is kept light (gray-200) for contrast on orange/dark background */}
  <p className="text-base mb-8 leading-relaxed text-gray-100 ">

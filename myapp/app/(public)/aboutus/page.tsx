@@ -81,7 +81,7 @@ const AirFreightPage = () => {
                 />
 
                 <div className="relative z-10 container mx-auto px-4 md:px-10 text-center">
-                    <Hammer size={64} className="mx-auto text-[#cf081f] mb-4" />
+                    <Hammer size={64} className="mx-auto text-[#ed6a1f] mb-4" />
                     <h1 className="text-5xl md:text-[43px] font-extrabold text-white mb-4">
                         About Us
                     </h1>
@@ -108,7 +108,7 @@ const AirFreightPage = () => {
                         <div className="order-1 md:order-2">
                             <p className='text-4xl text-start md:text-[21px] text-black font-light mb-2 font-montserrat'>About Silver Entity Engineering Solutions</p>
 <h2 className="text-4xl md:text-[43px] font-extrabold text-gray-800 mb-6 leading-tight">
-    Delivering <span className="text-[#cf081f]">Engineering Excellence</span> 
+    Delivering <span className="text-[#ed6a1f]">Engineering Excellence</span> 
 </h2>
                            <p className="text-[16px] text-gray-900 mb-6 leading-relaxed ">
 Silver Entity Engineering Solutions is a dynamic leader in industrial support and specialized contracting. Our foundation is built on decades of combined experience, providing essential services across various heavy industries, including oil & gas, petrochemicals, and manufacturing. We are dedicated to ensuring the operational integrity and efficiency of our clients' most critical assets.
@@ -119,9 +119,9 @@ Our comprehensive offering spans electrical & instrumentation, specialized manpo
                          
                             <Link
                                 href="/enquiry"
-                                className="mt-8 inline-flex items-center  bg-gray-800 text-white font-semibold px-8 py-4 rounded-full shadow-lg transition hover:bg-black group"
+                                className="mt-8 inline-flex items-center  bg-[#ed6a1f] text-white font-semibold px-8 py-4 rounded-full shadow-lg transition hover:bg-[#ff6600] group"
                             >
-                                Contact Us <ArrowRight size={20} className="ml-2 group-hover:translate-x-1 transition duration-300" />
+                                Contact Us <ArrowRight size={20} className="ml-2 rotate-[-40deg] group-hover:rotate-[0deg] transition duration-300" />
                             </Link>
                         </div>
                     </div>

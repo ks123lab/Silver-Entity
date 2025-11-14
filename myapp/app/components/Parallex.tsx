@@ -23,10 +23,10 @@ export default function SimpleBackgroundPage() {
       {/* Centered Title */}
       <div className="absolute inset-0 flex flex-col left-50 items-start justify-center  ml-10 space-x-4">
         <p className=" text-[22px] font-bold text-white md:ml-1 md:w-60 h-8  font-light  ">Provide the best</p>
-        <h1 className="text-6xl md:text-[70px] border-b border-white w-[160vh] text-start py-6 font-extrabold text-white text-center " data-aos="fade-up"  data-aos-duration="1000">
+        <h1 className="text-6xl md:text-[70px] border-b border-white w-[146vh] text-start py-6 font-bold text-white text-center " >
           Your Project, Our Priority<br />
         </h1> <br />
-      <div className="w-[160vh] flex items-center justify-between ">
+      <div className="w-[146vh] flex items-center justify-between ">
          <p className=" text-[16px] font-  text-white md:ml-1  h-8 md:mb-0">We aim to go beyond expectation consistently in delivery, quality, reliability and service.</p>
           <Link
                  href="/enquiry"

@@ -49,7 +49,7 @@ const FAQItem = ({ faq, isOpen, toggleFAQ }:FAQItemProps) => {
   const iconBg = isOpen ? "bg-orange-600" : "bg-gray-100";
 
   return (
-    <div className="border-b border-gray-200 py-6">
+    <div className="md:w-[800px] w-auto border-b border-gray-200 py-6 px-0">
       <button 
         className="flex justify-between items-start w-auto md:w-[800px] text-left focus:outline-none"
         onClick={toggleFAQ}
@@ -90,22 +90,22 @@ export default function FAQSection() {
 
   return (
     <section className="py-20 bg-white font-montserrat md:-mt-20">
-      <div className=" max-w-[166vh] ml-40 px-4 sm:px-6 lg:px-8">
+      <div className=" max-w-[169vh] ml-40 px-4 sm:px-6 lg:px-8">
         
         {/* Two-Column Layout */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           
           {/* Left Column: Title and Intro (4/12 width) */}
-          <div className="lg:col-span-4 w-[500px] lg:sticky lg:top-10">
+          <div className="lg:col-span-4 w-[500px] lg:sticky  lg:top-10">
             <div className="inline-block  text-sm font-semibold  text-gray-600 rounded-full mb-2">
               <p className='text-4xl text-start md:text-[22px] text-black font-light  font-montserrat'>Faq</p>
             </div>
             
             <h2 className="text-[43px] font-light leading-tight mb-6">
-              <span className="text-orange-600 font-extrabold ">Frequently Asked  Questions</span> About Silver Entity Engineering
+              <span className="text-orange-600 font-bold ">Frequently Asked  Questions</span> About Silver Entity Engineering
             </h2>
             
-            <p className="text-gray-600 leading-relaxed text-sm">
+            <p className="text-gray-600 font-medium leading-relaxed text-sm">
               We believe in clear communication and transparent processes. To help you understand more about our approach, project management, and specialized services, we've answered some of the most common questions we receive from clients and partners below.
             </p>
           </div>

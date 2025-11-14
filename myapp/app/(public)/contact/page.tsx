@@ -45,7 +45,7 @@ export default function Home() {
                 />
 
                 <div className="relative z-10 container mx-auto px-4 md:px-10 text-center">
-                    <Hammer size={64} className="mx-auto text-[#cf081f] mb-4" />
+                    <Hammer size={64} className="mx-auto text-[#ed6a1f] mb-4" />
                     <h1 className="text-5xl md:text-[43px] font-extrabold text-white mb-4">
                         Clients
                     </h1>

@@ -47,7 +47,7 @@ const AirFreightPage = () => {
                 />
 
                 <div className="relative z-10 container mx-auto px-4 md:px-10 text-center">
-                    <Users size={64} className="mx-auto text-[#cf081f] mb-4" />
+                    <Users size={64} className="mx-auto text-[#ed6a1f] mb-4" />
                     <h1 className="text-5xl md:text-[43px] font-extrabold text-white mb-4">
                         Manpower Supply
                     </h1>
@@ -73,7 +73,7 @@ const AirFreightPage = () => {
 
                         <div className="order-1 md:order-2">
                        <h2 className="text-4xl md:text-[43px] font-extrabold text-gray-800 mb-6 leading-tight">
-  Trusted, Skilled, <span className="text-[#cf081f]">and Reliable </span>Manpower Supply Services
+  Trusted, Skilled, <span className="text-[#ed6a1f]">and Reliable </span>Manpower Supply Services
 </h2>
 
 
@@ -93,9 +93,9 @@ Your workforce is our strength — ensuring reliability, dedication, and quality
                          
                             <Link
                                 href="/enquiry"
-                                className="mt-8 inline-flex items-center bg-gray-800 text-white font-semibold px-8 py-4 rounded-full shadow-lg transition hover:bg-black group"
+                                className="mt-8 inline-flex items-center  bg-[#ed6a1f] text-white font-semibold px-8 py-4 rounded-full shadow-lg transition hover:bg-[#ff6600] group"
                             >
-                                Contact Us <ArrowRight size={20} className="ml-2 group-hover:translate-x-1 transition duration-300" />
+                                Contact Us <ArrowRight size={20} className="ml-2 rotate-[-40deg] group-hover:rotate-[0deg] transition duration-300" />
                             </Link>
                         </div>
                     </div>
@@ -183,7 +183,7 @@ Your workforce is our strength — ensuring reliability, dedication, and quality
 
 {/* Why Choose Section (Manpower Supply) */}
 <section className="container mx-auto px-4 md:px-10 py-16">
-  <h2 className="text-3xl font-bold text-gray-800 mb-6 border-b-2 border-[#cf081f] pb-2">
+  <h2 className="text-3xl font-bold text-gray-800 mb-6 border-b-2 border-[#ed6a1f] pb-2">
     Why Choose Us for Manpower Supply?
   </h2>
 
@@ -191,19 +191,19 @@ Your workforce is our strength — ensuring reliability, dedication, and quality
     
     {/* Block 1: Skilled Workforce */}
     <div className="p-6 bg-white rounded-lg shadow-md hover:shadow-xl transition">
-      <h3 className="text-xl font-semibold text-[#cf081f] mb-3">Skilled & Qualified Workforce</h3>
+      <h3 className="text-xl font-semibold text-[#ed6a1f] mb-3">Skilled & Qualified Workforce</h3>
       <p>We provide experienced and certified professionals who are carefully vetted to ensure the highest standards of skill, safety, and reliability for every project.</p>
     </div>
 
     {/* Block 2: Flexible Staffing */}
     <div className="p-6 bg-white rounded-lg shadow-md hover:shadow-xl transition">
-      <h3 className="text-xl font-semibold text-[#cf081f] mb-3">Flexible Staffing Solutions</h3>
+      <h3 className="text-xl font-semibold text-[#ed6a1f] mb-3">Flexible Staffing Solutions</h3>
       <p>Whether you need short-term or long-term manpower, we offer flexible deployment options to match your project requirements and operational goals.</p>
     </div>
 
     {/* Block 3: Reliable Support */}
     <div className="p-6 bg-white rounded-lg shadow-md hover:shadow-xl transition">
-      <h3 className="text-xl font-semibold text-[#cf081f] mb-3">Dedicated Management & Support</h3>
+      <h3 className="text-xl font-semibold text-[#ed6a1f] mb-3">Dedicated Management & Support</h3>
       <p>Our team ensures smooth coordination, timely replacements, and continuous support to maintain efficiency and productivity at your job site.</p>
     </div>
 

@@ -46,7 +46,7 @@ const AirFreightPage = () => {
                 />
 
                 <div className="relative z-10 container mx-auto px-4 md:px-10 text-center">
-                    <Recycle size={64} className="mx-auto text-[#cf081f] mb-4" />
+                    <Recycle size={64} className="mx-auto text-[#ed6a1f] mb-4" />
                     <h1 className="text-5xl md:text-[43px] font-extrabold text-white mb-4">
                         Scrap Materials
                     </h1>
@@ -72,7 +72,7 @@ const AirFreightPage = () => {
 
                         <div className="order-1 md:order-2">
           <h2 className="text-4xl md:text-[43px] font-extrabold text-gray-800 mb-6 leading-tight">
-  Sustainable, Efficient, <span className="text-[#cf081f]">and Reliable </span>Scrap Material Trading
+  Sustainable, Efficient, <span className="text-[#ed6a1f]">and Reliable </span>Scrap Material Trading
 </h2>
 
 
@@ -95,9 +95,9 @@ Turning waste into value — responsibly and efficiently.
                          
                             <Link
                                 href="/enquiry"
-                                className="mt-8 inline-flex items-center bg-gray-800 text-white font-semibold px-8 py-4 rounded-full shadow-lg transition hover:bg-black group"
+                                className="mt-8 inline-flex items-center  bg-[#ed6a1f] text-white font-semibold px-8 py-4 rounded-full shadow-lg transition hover:bg-[#ff6600] group"
                             >
-                                Contact Us <ArrowRight size={20} className="ml-2 group-hover:translate-x-1 transition duration-300" />
+                                Contact Us <ArrowRight size={20} className="ml-2 rotate-[-40deg] group-hover:rotate-[0deg] transition duration-300" />
                             </Link>
                         </div>
                     </div>
@@ -183,7 +183,7 @@ Turning waste into value — responsibly and efficiently.
 <ParallaxPage/>
 {/* Why Choose Section (Scrap Material Trading) */}
 <section className="container mx-auto px-4 md:px-10 py-16">
-  <h2 className="text-3xl font-bold text-gray-800 mb-6 border-b-2 border-[#cf081f] pb-2">
+  <h2 className="text-3xl font-bold text-gray-800 mb-6 border-b-2 border-[#ed6a1f] pb-2">
     Why Choose Us for Scrap Material Trading?
   </h2>
 
@@ -191,19 +191,19 @@ Turning waste into value — responsibly and efficiently.
     
     {/* Block 1: Fair Pricing */}
     <div className="p-6 bg-white rounded-lg shadow-md hover:shadow-xl transition">
-      <h3 className="text-xl font-semibold text-[#cf081f] mb-3">Transparent & Fair Pricing</h3>
+      <h3 className="text-xl font-semibold text-[#ed6a1f] mb-3">Transparent & Fair Pricing</h3>
       <p>We ensure honest and competitive pricing for all types of scrap materials, backed by accurate weighing and transparent transactions.</p>
     </div>
 
     {/* Block 2: Eco-Friendly Approach */}
     <div className="p-6 bg-white rounded-lg shadow-md hover:shadow-xl transition">
-      <h3 className="text-xl font-semibold text-[#cf081f] mb-3">Eco-Friendly Operations</h3>
+      <h3 className="text-xl font-semibold text-[#ed6a1f] mb-3">Eco-Friendly Operations</h3>
       <p>Our recycling and disposal processes follow environmental best practices to reduce waste and promote sustainability across industries.</p>
     </div>
 
     {/* Block 3: Reliable Supply Chain */}
     <div className="p-6 bg-white rounded-lg shadow-md hover:shadow-xl transition">
-      <h3 className="text-xl font-semibold text-[#cf081f] mb-3">Reliable & Efficient Supply Chain</h3>
+      <h3 className="text-xl font-semibold text-[#ed6a1f] mb-3">Reliable & Efficient Supply Chain</h3>
       <p>With an organized logistics network, we ensure prompt collection, processing, and delivery of scrap materials to our valued partners.</p>
     </div>
 

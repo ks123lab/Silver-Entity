@@ -27,7 +27,7 @@ const AirFreightPage = () => {
                 />
 
                 <div className="relative z-10 container mx-auto px-4 md:px-10 text-center">
-                    <Hammer size={64} className="mx-auto text-[#cf081f] mb-4" />
+                    <Hammer size={64} className="mx-auto text-[#ed6a1f] mb-4" />
                     <h1 className="text-5xl md:text-[43px] font-extrabold text-white mb-4">
                         Civil Works 
                     </h1>
@@ -53,7 +53,7 @@ const AirFreightPage = () => {
 
                         <div className="order-1 md:order-2">
                             <h2 className="text-4xl md:text-[43px] font-extrabold text-gray-800 mb-6 leading-tight">
-                              Civil Work <span className="text-[#cf081f]">Solutions for</span> a Stronger Tomorrow.
+                              Civil Work <span className="text-[#ed6a1f]">Solutions for</span> a Stronger Tomorrow.
                             </h2>
                             <p className="text-[16px] text-gray-900 mb-6 leading-relaxed ">
 When infrastructure quality is critical, our civil works services provide the expertise and reliability your project demands. From foundational excavation to complex structural construction, we leverage a skilled team and modern equipment to ensure your projects are completed safely, on time, and to the highest standards.    </p>
@@ -62,9 +62,9 @@ We understand the complexities of industrial and commercial construction and are
                          
                             <Link
                                 href="/enquiry"
-                                className="mt-8 inline-flex items-center bg-gray-800 text-white font-semibold px-8 py-4 rounded-full shadow-lg transition hover:bg-black group"
+                                className="mt-8 inline-flex items-center  bg-[#ed6a1f] text-white font-semibold px-8 py-4 rounded-full shadow-lg transition hover:bg-[#ff6600] group"
                             >
-                                Contact Us <ArrowRight size={20} className="ml-2 group-hover:translate-x-1 transition duration-300" />
+                                Contact Us <ArrowRight size={20} className="ml-2 rotate-[-40deg] group-hover:rotate-[0deg] transition duration-300" />
                             </Link>
                         </div>
                     </div>
@@ -136,7 +136,7 @@ We understand the complexities of industrial and commercial construction and are
 
           {/* Why Choose Section (Civil Works) */}
 <section className="container mx-auto px-4 md:px-10 py-16">
-    <h2 className="text-3xl font-bold text-gray-800 mb-6 border-b-2 border-[#cf081f] pb-2">
+    <h2 className="text-3xl font-bold text-gray-800 mb-6 border-b-2 border-[#ed6a1f] pb-2">
         Why Choose Us for Civil Works?
     </h2>
     
@@ -144,19 +144,19 @@ We understand the complexities of industrial and commercial construction and are
         
         {/* Expertise Block 1: Quality and Compliance */}
         <div className="p-6 bg-white rounded-lg shadow-md hover:shadow-xl transition">
-            <h3 className="text-xl font-semibold text-[#cf081f] mb-3">Certified Quality & Safety</h3>
+            <h3 className="text-xl font-semibold text-[#ed6a1f] mb-3">Certified Quality & Safety</h3>
             <p>Our projects adhere to stringent international quality and safety standards, ensuring durable and compliant construction every time.</p>
         </div>
         
         {/* Expertise Block 2: Comprehensive Capabilities */}
         <div className="p-6 bg-white rounded-lg shadow-md hover:shadow-xl transition">
-            <h3 className="text-xl font-semibold text-[#cf081f] mb-3">Integrated Project Management</h3>
+            <h3 className="text-xl font-semibold text-[#ed6a1f] mb-3">Integrated Project Management</h3>
             <p>We manage all phases of civil construction, from initial planning and design to execution and final handover, offering turnkey solutions.</p>
         </div>
         
         {/* Expertise Block 3: Skilled Team & Equipment */}
         <div className="p-6 bg-white rounded-lg shadow-md hover:shadow-xl transition">
-            <h3 className="text-xl font-semibold text-[#cf081f] mb-3">Experienced Manpower & Fleet</h3>
+            <h3 className="text-xl font-semibold text-[#ed6a1f] mb-3">Experienced Manpower & Fleet</h3>
             <p>A dedicated team of experienced civil engineers and a modern fleet of equipment guarantee efficiency and timely project completion.</p>
         </div>
         

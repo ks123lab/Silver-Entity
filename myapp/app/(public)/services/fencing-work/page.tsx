@@ -46,7 +46,7 @@ const AirFreightPage = () => {
                 />
 
                 <div className="relative z-10 container mx-auto px-4 md:px-10 text-center">
-                    <Fence size={64} className="mx-auto text-[#cf081f] mb-4" />
+                    <Fence size={64} className="mx-auto text-[#ed6a1f] mb-4" />
                     <h1 className="text-5xl md:text-[43px] font-extrabold text-white mb-4">
                         Fencing Works
                     </h1>
@@ -72,7 +72,7 @@ const AirFreightPage = () => {
 
                         <div className="order-1 md:order-2">
                             <h2 className="text-4xl md:text-[43px] font-extrabold text-gray-800 mb-6 leading-tight">
-                              Strong, Secure,<span className="text-[#cf081f]">and Reliable </span>Fencing Works
+                              Strong, Secure,<span className="text-[#ed6a1f]">and Reliable </span>Fencing Works
                             </h2>
               <p className="text-[16px] text-gray-900 mb-6 leading-relaxed">
 When security, safety, and boundary protection matter, our Fencing Works services deliver durable and dependable solutions for every project. From industrial sites to residential and commercial properties, we ensure precision and strength in every installation. Our commitment to quality craftsmanship ensures every fence we build enhances both protection and visual appeal.
@@ -88,9 +88,9 @@ Your protection is our priority — ensuring every fence we build offers both st
                          
                             <Link
                                 href="/enquiry"
-                                className="mt-8 inline-flex items-center bg-gray-800 text-white font-semibold px-8 py-4 rounded-full shadow-lg transition hover:bg-black group"
+                                className="mt-8 inline-flex items-center  bg-[#ed6a1f] text-white font-semibold px-8 py-4 rounded-full shadow-lg transition hover:bg-[#ff6600] group"
                             >
-                                Contact Us <ArrowRight size={20} className="ml-2 group-hover:translate-x-1 transition duration-300" />
+                                Contact Us <ArrowRight size={20} className="ml-2 rotate-[-40deg] group-hover:rotate-[0deg] transition duration-300" />
                             </Link>
                         </div>
                     </div>
@@ -179,7 +179,7 @@ Your protection is our priority — ensuring every fence we build offers both st
 
     {/* Why Choose Section (Equipment Rentals) */}
 <section className="container mx-auto px-4 md:px-10 py-16">
-    <h2 className="text-3xl font-bold text-gray-800 mb-6 border-b-2 border-[#cf081f] pb-2">
+    <h2 className="text-3xl font-bold text-gray-800 mb-6 border-b-2 border-[#ed6a1f] pb-2">
         Why Choose Us for Equipment Rentals?
     </h2>
     
@@ -187,19 +187,19 @@ Your protection is our priority — ensuring every fence we build offers both st
         
         {/* Block 1: Quality Equipment */}
         <div className="p-6 bg-white rounded-lg shadow-md hover:shadow-xl transition">
-            <h3 className="text-xl font-semibold text-[#cf081f] mb-3">Reliable & Well-Maintained Fleet</h3>
+            <h3 className="text-xl font-semibold text-[#ed6a1f] mb-3">Reliable & Well-Maintained Fleet</h3>
             <p>All our equipment is regularly inspected and maintained to ensure maximum performance, safety, and reliability on every project site.</p>
         </div>
         
         {/* Block 2: Flexible Solutions */}
         <div className="p-6 bg-white rounded-lg shadow-md hover:shadow-xl transition">
-            <h3 className="text-xl font-semibold text-[#cf081f] mb-3">Flexible Rental Options</h3>
+            <h3 className="text-xl font-semibold text-[#ed6a1f] mb-3">Flexible Rental Options</h3>
             <p>We offer short-term and long-term rental solutions that fit your project timeline and budget, giving you complete operational flexibility.</p>
         </div>
         
         {/* Block 3: Expert Support */}
         <div className="p-6 bg-white rounded-lg shadow-md hover:shadow-xl transition">
-            <h3 className="text-xl font-semibold text-[#cf081f] mb-3">Technical Support & Guidance</h3>
+            <h3 className="text-xl font-semibold text-[#ed6a1f] mb-3">Technical Support & Guidance</h3>
             <p>Our experienced technicians provide on-site assistance, ensuring proper equipment usage, safety, and efficiency for smooth operations.</p>
         </div>
         
