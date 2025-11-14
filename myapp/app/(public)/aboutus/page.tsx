@@ -81,14 +81,14 @@ const AirFreightPage = () => {
                 />
 
                 <div className="relative z-10 container mx-auto px-4 md:px-10 text-center">
-                    <Hammer size={64} className="mx-auto text-[#ed6a1f] mb-4" />
+                    {/* <Hammer size={64} className="mx-auto text-[#ed6a1f] mb-4" /> */}
                     <h1 className="text-5xl md:text-[43px] font-extrabold text-white mb-4">
                         About Us
                     </h1>
                     <div className='text-gray-300 font-semibold flex gap-2 justify-center'>
                         <Link href="/" className="hover:text-white transition duration-300">Home</Link>
                         <span>/</span>
-                        <Link href="/aboutus" className="hover:text-white transition duration-300">AboutUs</Link>
+                        <Link href="/aboutus" className="hover:text-white text-[#ff6600] transition duration-300">AboutUs</Link>
                     </div>
                 </div>
             </section>
@@ -106,7 +106,7 @@ const AirFreightPage = () => {
                         </div>
 
                         <div className="order-1 md:order-2">
-                            <p className='text-4xl text-start md:text-[21px] text-black font-light mb-2 font-archivo'data-aos="fade-up" data-aos-delay="100"  data-aos-duration="1000">About Silver Entity Engineering Solutions</p>
+                            <p className='text-4xl text-start md:text-[21px] text-black font-light mb-2 font-archivo'data-aos="fade-up" data-aos-delay="100"  data-aos-duration="1000">Silver Entity Engineering Solutions</p>
 <h2 className="text-4xl md:text-[43px] font-extrabold text-gray-800 mb-6 leading-tight"data-aos="fade-up" data-aos-delay="200"  data-aos-duration="1000">
     Delivering <span className="text-[#ed6a1f]">Engineering Excellence</span> 
 </h2>

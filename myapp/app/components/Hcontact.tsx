@@ -105,7 +105,7 @@ export default function ContactSectionGeometric() {
                     {/* 1. Left Block: Contact Information (Dark Accent) */}
                     {/* Added shadow offset for depth */}
                     <div className="bg-[#ed6a1f] p-8 md:p-12 rounded-xl shadow-2xl relative z-10 lg:w-[40%] lg:absolute lg:top-0 lg:left-0 lg:shadow-[-20px_20px_40px_rgba(0,0,0,0.3)]"data-aos="fade-up" data-aos-delay="300"  data-aos-duration="1000">
-                        <h3 className="text-3xl font-bold font-serif text-white mb-8">
+                        <h3 className="text-3xl font-bold  text-white mb-8">
                             Ready to Start?
                         </h3>
                         <p className="text-gray-100 font-archivo mb-8">
