@@ -1,6 +1,18 @@
 import React, { useState } from 'react';
 import { ChevronDown, ChevronUp } from 'lucide-react';
 
+
+interface FAQ {
+  id: number; // Example property
+  question: string;
+  answer: string;
+}
+
+interface FAQItemProps {
+  faq: FAQ; // This specifies that 'faq' must be of type FAQ
+  isOpen: boolean;
+  toggleFAQ: () => void; // This specifies that 'toggleFAQ' is a function that takes no arguments and returns nothing
+}
 // Sample data for the FAQs related to Silver Entity Engineering Works
 const faqData = [
   {
@@ -31,7 +43,7 @@ const faqData = [
 ];
 
 // Individual FAQ Item Component
-const FAQItem = ({ faq, isOpen, toggleFAQ }) => {
+const FAQItem = ({ faq, isOpen, toggleFAQ }:FAQItemProps) => {
   const Icon = isOpen ? ChevronUp : ChevronDown;
   const iconColor = isOpen ? "text-white" : "text-gray-500";
   const iconBg = isOpen ? "bg-orange-600" : "bg-gray-100";
