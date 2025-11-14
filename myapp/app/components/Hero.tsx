@@ -77,7 +77,7 @@ export default function HeroSlider() {
               exit={{ opacity: 0, y: -50 }}
               transition={{ duration: 0.8 }}
             >
-              <h1 className="text-3xl md:text-[50px] font-montserrat font-semibold mt-20 leading-none text-white md:w-[650px]">
+              <h1 className="text-3xl md:text-[50px] font-archivo font-semibold mt-20 leading-none text-white md:w-[650px]">
                 {currentSlide.title}
               </h1>
 

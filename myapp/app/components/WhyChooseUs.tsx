@@ -53,8 +53,8 @@ const categories: Category[] = [
 
 
 export default function VerticalCategoryList() {
-  // The 'montserrat' font class is used throughout the original code
-  const fontClass = "font-montserrat";
+  // The 'archivo' font class is used throughout the original code
+  const fontClass = "font-archivo";
 
   return (
     <section className="relative py-20 bg-white -mt-20 text-gray-800 ">
@@ -63,7 +63,7 @@ export default function VerticalCategoryList() {
         {/* Header Section (Based on 'Driven to Deliver' style) */}
         <div className="mb-12 lg:mb-16">
           {/* Small Tag */}
-        <p className='text-4xl text-start md:text-[22px] text-black font-light mb-2 font-montserrat' data-aos="fade-up" data-aos-delay="100"  data-aos-duration="1000">Why Choose Us</p>
+        <p className='text-4xl text-start md:text-[22px] text-black font-light mb-2 font-archivo' data-aos="fade-up" data-aos-delay="100"  data-aos-duration="1000">Why Choose Us</p>
           {/* Main Title */}
           <h2 className={`text-3xl md:text-[43px] font-light text-gray-900 leading-tight ${fontClass}`} data-aos="fade-up" data-aos-delay="200"  data-aos-duration="1000">
             Our Engineering 

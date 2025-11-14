@@ -15,7 +15,7 @@ export default function Footer() {
   ];
 
   return (
-    <footer className={`font-montserrat ${primaryColor} text-white rounded-t-[50px]  mx-4 h-[430px] shadow-lg`}>
+    <footer className={`font-archivo ${primaryColor} text-white rounded-t-[50px]  mx-4 h-[430px] shadow-lg`}>
       <div className="max-w-[185vh] ml-40 px-6 sm:px-10 lg:px-14 pt-12  ">
 
         {/* --- 1. TOP SECTION: Socials --- */}

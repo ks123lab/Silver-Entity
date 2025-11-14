@@ -197,7 +197,7 @@ const Navbar = () => {
       <div className="flex gap-4">
         {/* PHONE NUMBER - MODIFIED to always be visible (removed dynamic opacity/width) */}
         <div className="hidden lg:flex items-center text-gray-900 md:px-4 py-2 rounded-[8px] transition-all duration-300 ease-in-out">
-          <span className="font-semibold font-montserrat text-[18px] flex gap-0">
+          <span className="font-semibold font-archivo text-[18px] flex gap-0">
          <Phone size={20} fill="black" className="mt-1 transition duration-300" />  +91 1234567890
           </span>
         </div>

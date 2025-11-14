@@ -65,11 +65,11 @@ export default function MaterialsServiceShowcase() {
         {/* Header */}
         <div className="text-start ml-28 mb-8">
         
-       <p className='text-4xl text-start md:text-[22px] text-black font-light mb-2 font-montserrat'  data-aos="fade-up"   data-aos-duration="1000">Our Services</p>
-          <h2 className="text-4xl text-start md:text-[43px] text-black font-light mb-2 font-montserrat"  data-aos="fade-up" data-aos-delay="100"  data-aos-duration="1000">
+       <p className='text-4xl text-start md:text-[22px] text-black font-light mb-2 font-archivo'  data-aos="fade-up"   data-aos-duration="1000">Our Services</p>
+          <h2 className="text-4xl text-start md:text-[43px] text-black font-light mb-2 font-archivo"  data-aos="fade-up" data-aos-delay="100"  data-aos-duration="1000">
             Efficient and Reliable
           </h2>
-            <h2 className="text-4xl text-start text-[#ed6a1f] md:text-[43px] font-bold font-montserrat" data-aos="fade-up" data-aos-delay="200"  data-aos-duration="1000">
+            <h2 className="text-4xl text-start text-[#ed6a1f] md:text-[43px] font-bold font-archivo" data-aos="fade-up" data-aos-delay="200"  data-aos-duration="1000">
             Global Solutions
           </h2>
         </div>
@@ -138,7 +138,7 @@ export default function MaterialsServiceShowcase() {
                       }}
                       transition={{ duration: 0.3 }}
                     >
-            <h3 className="text-[33px] pt-4 border-t border-white font-semibold uppercase text-white font-montserrat leading-tight">
+            <h3 className="text-[33px] pt-4 border-t border-white font-semibold uppercase text-white font-archivo leading-tight">
                         {service.title}
                       </h3>
                     </motion.div>

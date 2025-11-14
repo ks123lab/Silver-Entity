@@ -53,17 +53,17 @@ const FourCards = () => {
           <div className="md:col-span-3 bg-[#5c5c5c] py-24  p-8 sm:p-12 lg:p-16 flex flex-col">
             <h2 className="text-4xl lg:text-[43px] hidden md:block text-white mb-6 -mt-10 ml-10 md:ml-28 leading-tight text-left md:text-left" data-aos="fade-up" data-aos-delay="100"  data-aos-duration="1000">
               Transforming{" "}
-              <span className="text-4xl lg:text-[43px] font-extrabold text-white leading-tight" >
+              <span className="text-4xl lg:text-[43px] font-bold text-white leading-tight" >
                 Innovation,
               </span>
               <br />
-              <span className="text-4xl lg:text-[43px] font-extrabold text-white leading-tight">
+              <span className="text-4xl lg:text-[43px] font-bold text-white leading-tight">
                 Exceeding
               </span>{" "}
               Spaces
               <br />
               Choose{" "}
-              <span className="text-4xl lg:text-[43px] font-extrabold text-white leading-tight">
+              <span className="text-4xl lg:text-[43px] font-bold text-white leading-tight">
                 Excellence
               </span>
             </h2>

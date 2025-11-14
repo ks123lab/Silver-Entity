@@ -66,7 +66,7 @@ import WhyChooseUs from '@/app/components/WhyChooseUs';
 import Hcontact from '@/app/components/Hcontact';
 
 const AirFreightPage = () => {
-      const fontClass = "font-montserrat";
+      const fontClass = "font-archivo";
     return (
         <div className="min-h-screen bg-gray-50  ">
             
@@ -106,7 +106,7 @@ const AirFreightPage = () => {
                         </div>
 
                         <div className="order-1 md:order-2">
-                            <p className='text-4xl text-start md:text-[21px] text-black font-light mb-2 font-montserrat'data-aos="fade-up" data-aos-delay="100"  data-aos-duration="1000">About Silver Entity Engineering Solutions</p>
+                            <p className='text-4xl text-start md:text-[21px] text-black font-light mb-2 font-archivo'data-aos="fade-up" data-aos-delay="100"  data-aos-duration="1000">About Silver Entity Engineering Solutions</p>
 <h2 className="text-4xl md:text-[43px] font-extrabold text-gray-800 mb-6 leading-tight"data-aos="fade-up" data-aos-delay="200"  data-aos-duration="1000">
     Delivering <span className="text-[#ed6a1f]">Engineering Excellence</span> 
 </h2>
@@ -135,7 +135,7 @@ Our comprehensive offering spans electrical & instrumentation, specialized manpo
         {/* Header Section (Based on 'Driven to Deliver' style) */}
         <div className="mb-12 lg:mb-16 md:ml-4">
           {/* Small Tag */}
-        <p className='text-4xl text-start md:text-[22px] text-black font-light mb-2 font-montserrat'data-aos="fade-up" data-aos-delay="100"  data-aos-duration="1000">Why Choose Us</p>
+        <p className='text-4xl text-start md:text-[22px] text-black font-light mb-2 font-archivo'data-aos="fade-up" data-aos-delay="100"  data-aos-duration="1000">Why Choose Us</p>
           {/* Main Title */}
           <h2 className={`text-5xl font-light text-gray-900 leading-tight ${fontClass}`}data-aos="fade-up" data-aos-delay="200"  data-aos-duration="1000">
             Our Engineering 

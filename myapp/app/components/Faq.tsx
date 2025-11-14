@@ -89,8 +89,8 @@ export default function FAQSection() {
   };
 
   return (
-    <section className="py-20 bg-white font-montserrat md:-mt-20">
-      <div className=" max-w-[169vh] ml-40 px-4 sm:px-6 lg:px-8">
+    <section className="py-20 bg-white font-archivo md:-mt-20">
+      <div className=" max-w-[179vh] ml-54 px-4 sm:px-6 lg:px-8">
         
         {/* Two-Column Layout */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
@@ -98,7 +98,7 @@ export default function FAQSection() {
           {/* Left Column: Title and Intro (4/12 width) */}
           <div className="lg:col-span-4 w-[500px] lg:sticky  lg:top-10">
             <div className="inline-block  text-sm font-semibold  text-gray-600 rounded-full mb-2">
-              <p className='text-4xl text-start md:text-[22px] text-black font-light  font-montserrat'data-aos="fade-up" data-aos-delay="100"  data-aos-duration="1000">Faq</p>
+              <p className='text-4xl text-start md:text-[22px] text-black font-light  font-archivo'data-aos="fade-up" data-aos-delay="100"  data-aos-duration="1000">Faq</p>
             </div>
             
             <h2 className="text-[43px] font-light leading-tight mb-6" data-aos="fade-up" data-aos-delay="200"  data-aos-duration="1000">
